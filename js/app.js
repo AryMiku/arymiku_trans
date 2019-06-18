@@ -287,5 +287,41 @@ app.controller('myCtrl', function($scope) {
             mkv : "https://drive.google.com/open?id=1e5kJn-ipKJYE17jxYzERTDt83gypNWMQ",
             ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
         },
+        {
+            Name : "ตอนที่ 142 => ",
+            mp4 : "https://drive.google.com/open?id=1K8HUVtyIKES_SB0VsPwZL9Zpj_J-PvZS",
+            mkv : "https://drive.google.com/open?id=1VcqtXqe5L9obEKlUpCNQq0QYVLqL9V3d",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 143 => ",
+            mp4 : "https://drive.google.com/open?id=1RoRn8v_yQOEvIwUfY9uCI2Y-YXqGgjIR",
+            mkv : "https://drive.google.com/open?id=1A4xa67Yt_noLq0ZNau1cHuCTvJYl4YH3",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 144 => ",
+            mp4 : "https://drive.google.com/open?id=12v6UoUuOnXJIoUI6Zuao-dBURm2-_ECf",
+            mkv : "https://drive.google.com/open?id=1JcS7577RSgQhdDO33hRPROQeF17AJSJl",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 145 => ",
+            mp4 : "https://drive.google.com/open?id=1l1LlH89f1RJPyPvjNaxC-15LRPyBR4pc",
+            mkv : "https://drive.google.com/open?id=107TZCbo0MCACM-m6JMz5TMNO3CjCAbAr",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 146 => ",
+            mp4 : "https://drive.google.com/open?id=1umFWLdPWWkd1mgwzklgyuqkq9XOx0hrc",
+            mkv : "https://drive.google.com/open?id=1DehrGfQ_T6vqNGj2yBkcs1EKZGd_p7GC",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 147 => ",
+            mp4 : "https://drive.google.com/open?id=19CZSbCIiBasFc1zOfM4GSAi8kM8xM9C_",
+            mkv : "https://drive.google.com/open?id=1jcp4mPVK4RzBBFuHDZ57grIaS5CxfhKm",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        }
     ];
 });
