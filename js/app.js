@@ -196,4 +196,96 @@ app.controller('myCtrl', function($scope) {
             twoth : "https://2th.me/a/1028/f1041/3015267"
         },
     ];
+    $scope.yugioharcv = [
+        {
+            Name : "ตอนที่ 120 => ",
+            mp4 : "https://drive.google.com/open?id=1LKHbQmqcQoZDbaqlAok-DtKvftThLaO_",
+            mkv : "https://drive.google.com/open?id=1GVZYZUq7xGe5ydgdKiPzEjASvNQOzZcp",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 121 => ",
+            mp4 : "https://drive.google.com/open?id=1sVFu3khWJr2j7f7DE1RtLa276vA2Onf5",
+            mkv : "https://drive.google.com/open?id=1sFXeTdfcu_G8JDt7MjiQHs9WMCfJJXo9",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 122 => ",
+            mp4 : "https://drive.google.com/open?id=1Y2Kl1N34zNTJPh1gP8CbK0xg1U94uMi8",
+            mkv : "https://drive.google.com/open?id=1L50eJp7EjaIe9nQqV85E73fDDk7vsECY",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 123 => ",
+            mp4 : "https://drive.google.com/open?id=1yFAjBsI7q28A2qK0Zo45-IZ_5EyynGDx",
+            mkv : "https://drive.google.com/open?id=1LkZ8Lv02wZ2y-MhgpstEMI_oPjLHA7Hx",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 124 => ",
+            mp4 : "https://drive.google.com/open?id=18T4A3VBbeDOTsJlPzeIU2Xm2H4wIDOXD",
+            mkv : "https://drive.google.com/open?id=1A4b80iIVXS-0THIoYheSM8QfjTRV5dIY",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 125 => ",
+            mp4 : "https://drive.google.com/open?id=1xl_LxMUYHLMz8IuHtRcMISix-JLJOCFP",
+            mkv : "https://drive.google.com/open?id=1NFPni0DmAlnzAKcVi5Sxop2kGpkrCc7D",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 126 => ",
+            mp4 : "https://drive.google.com/open?id=1Vtf6GPb6r6iCsJRSvIfKcpzD35QYH28c",
+            mkv : "https://drive.google.com/open?id=1NoZ4ZzFa3XppQKYhvk7C4sLHwizfEEr2",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 127 => ",
+            mp4 : "https://drive.google.com/open?id=1q55_nKp3IZ4iTwdwlNRKDftavfKAfKQ1",
+            mkv : "https://drive.google.com/open?id=1FOHPWWxUVgYt5WHWy2UcDOvbK7uDaQnj",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 128 => ",
+            mp4 : "https://drive.google.com/open?id=1Xr-lEb9mmlisW-NBkFSDVfcO0PpW_lg9",
+            mkv : "https://drive.google.com/open?id=1ONRb6wAfth9fnd9BxBE983Y9Sl5kiyKN",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 129 => ",
+            mp4 : "https://drive.google.com/open?id=1zfzWgfzlx9D3MWMhGdHfQhdr216hlBEK",
+            mkv : "https://drive.google.com/open?id=1FwSJ77DNEc3WiWNm1ivfoeNWJXb4WDEn",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 129 => ",
+            mp4 : "https://drive.google.com/open?id=1zfzWgfzlx9D3MWMhGdHfQhdr216hlBEK",
+            mkv : "https://drive.google.com/open?id=1FwSJ77DNEc3WiWNm1ivfoeNWJXb4WDEn",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 137 => ",
+            mp4 : "https://drive.google.com/open?id=1vH5mMhgiGoSHEZLB6wcpgNjbrQye7VJt",
+            mkv : "https://drive.google.com/open?id=1ecZJ3rdK1zOZQ-xRe25ILNSepS1SRGDL",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 138 => ",
+            mp4 : "https://drive.google.com/open?id=1CMXbd0E-YeMZUZ7Be79CM8_5DM1h9-AS",
+            mkv : "https://drive.google.com/open?id=1MJ_dgTX7YlJEeeRHFX2rZmB6hCg9HsLk",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 139 => ",
+            mp4 : "https://drive.google.com/open?id=1GmoJ4vjdSX4T-2gPHT7TxDFYyoTDP5bT",
+            mkv : "https://drive.google.com/open?id=1BxZ83LxpvQcy_8pyl1etYfD29Zuc2wkp",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+        {
+            Name : "ตอนที่ 141 => ",
+            mp4 : "https://drive.google.com/open?id=1pvNyh4OWiQIhnoJd_dDBMq7S7kJRkqMF",
+            mkv : "https://drive.google.com/open?id=1e5kJn-ipKJYE17jxYzERTDt83gypNWMQ",
+            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
+        },
+    ];
 });
