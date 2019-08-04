@@ -325,10 +325,24 @@ app.controller('myCtrl', function($scope) {
         }
     ];
 
+    $scope.aria = [
+        {
+            Name : "เล่มที่ 8 => ",
+            mega : "https://mega.nz/#!z5ZxAQST!DvwwQBN9F-nYCBCqlm_vS1gfpKVe399CnurllLFur5w"
+        }
+    ]
+
+    $scope.zio = [
+        {
+            Name : "ตอนที่ 45 => ",
+            mega : "https://mega.nz/#!6lY2wIxY!OKsvkORyn0kYklkNHegBiPW6kKyqar5t4pASBKfCjKg"
+        }
+    ]
+
     $scope.nagatoro = [
         {
             Name : "เล่มที่ 5 => ",
-            mega : "https://mega.nz/#!z5ZxAQST!DvwwQBN9F-nYCBCqlm_vS1gfpKVe399CnurllLFur5w"
+            mega : "https://mega.nz/#!vxA1XAiY!RJycCuXBg2MBjaVWZPlMoFVGzaMDOfk1r64lD1B68dY"
         }
     ]
 });
