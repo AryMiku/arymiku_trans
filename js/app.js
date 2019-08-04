@@ -324,4 +324,11 @@ app.controller('myCtrl', function($scope) {
             ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
         }
     ];
+
+    $scope.nagatoro = [
+        {
+            Name : "เล่มที่ 5 => ",
+            mega : "https://mega.nz/#!z5ZxAQST!DvwwQBN9F-nYCBCqlm_vS1gfpKVe399CnurllLFur5w"
+        }
+    ]
 });
