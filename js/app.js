@@ -342,7 +342,7 @@ app.controller('myCtrl', function($scope) {
     $scope.nagatoro = [
         {
             Name : "เล่มที่ 5 => ",
-            mega : "https://mega.nz/#!vxA1XAiY!RJycCuXBg2MBjaVWZPlMoFVGzaMDOfk1r64lD1B68dY"
+            mega : "https://mega.nz/#!rshSwKBY!HTsyK0lsbkgdjOSOog7njTNyZephbK6UjncbuAVfVRQ"
         }
     ]
 });
