@@ -345,4 +345,11 @@ app.controller('myCtrl', function($scope) {
             mega : "https://mega.nz/#!rshSwKBY!HTsyK0lsbkgdjOSOog7njTNyZephbK6UjncbuAVfVRQ"
         }
     ]
+
+    $scope.fate_babi = [
+        {
+            Name : "ตอนที่ 0 => ",
+            mega : "https://mega.nz/#!79onXChS!HfG7Rz8jUk-6H5KaesZu-3yLNncohme6OKtKOmRl2r8"
+        }
+    ]
 });
