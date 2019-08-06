@@ -336,6 +336,10 @@ app.controller('myCtrl', function($scope) {
         {
             Name : "ตอนที่ 45 => ",
             mega : "https://mega.nz/#!6lY2wIxY!OKsvkORyn0kYklkNHegBiPW6kKyqar5t4pASBKfCjKg"
+        },
+        {
+            Name : "ตอนที่ 46 => ",
+            mega : "https://mega.nz/#!q4IiCKbS!KMsi4X9JJCMlynF4TQ1qAkUUQuWlF472xHV0GTUDdT0"
         }
     ]
 
