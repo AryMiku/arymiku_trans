@@ -515,4 +515,13 @@ app.controller('myCtrl', function($scope) {
             ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
         },
     ]
+
+    $scope.ana = [
+        {
+            Name : "OVA (ตอนเดียวจบ) => ",
+            MP4 : "https://drive.google.com/file/d/1BvkZjqPL-GFKmqRb-TTWz2Iw3ESL3w9i/view",
+            MKV : "https://drive.google.com/file/d/1IROzSEXaH3dAxdslm2mTzTBiAwHfnEzH/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Nozoki%20Ana",
+        }
+    ]
 });

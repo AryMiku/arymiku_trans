@@ -4,7 +4,7 @@
 
 ![](https://img.shields.io/badge/Version-1.2-green) ![](https://img.shields.io/badge/Angular-1.0-red) ![](https://img.shields.io/badge/Release-1.2-yellowgreen)
 
-###Description
+### Description
  เว็บนี้ทำขึ้นมาเพื่อใช้การฝึกใช้ภาษา AngularJS และเป็นเว็บที่เอาไว้ให้โหลด Anime ซับไทยของค่าย AryMiku ด้วย
 
 ### Features
