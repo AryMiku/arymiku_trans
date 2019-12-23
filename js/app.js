@@ -516,6 +516,21 @@ app.controller('myCtrl', function($scope) {
         },
     ]
 
+    $scope.AzurLane = [
+        {
+            Name : "ตอนที่ 1 => ",
+            MP4 : "https://drive.google.com/file/d/1lMryAtVhADkk90gl0ZWj0nK9KNIYGA2G/view",
+            MKV : "https://drive.google.com/file/d/1WIOR4ntGBPafXDbnym6fgaJ0JoRkwC8c/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Azur%20Lane",
+        },
+        {
+            Name : "ตอนที่ 2 => ",
+            MP4 : "https://drive.google.com/file/d/13U7fbChC_SyI3WoCLwgvbEbt2N2Kw8cw/view",
+            MKV : "https://drive.google.com/file/d/120ChOEsK_jiO2q3jT1btDEj2IcX51faF/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Azur%20Lane",
+        }
+    ]
+
     $scope.ana = [
         {
             Name : "OVA (ตอนเดียวจบ) => ",
@@ -525,3 +540,44 @@ app.controller('myCtrl', function($scope) {
         }
     ]
 });
+
+app.controller('secretCtrl',function($scope,$http){
+
+      
+    $scope.edragon = async function(){
+        $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json").then(function(res,status,xhr) {
+            $scope.data = res.data;
+            console.log($scope.data)
+        });
+    }
+
+    $scope.seepicture = (Id) => {
+        Swal.fire({
+            title: 'Sweet!',
+            text: 'Modal with a custom image.',
+            imageUrl: '/pic/secret/'+Id+'.jpg',
+            imageWidth: 248,
+            imageHeight: 350,
+            imageAlt: 'Custom image',
+            showCancelButton: true,
+            confirmButtonText: "ไปหน้า Dowload",
+            cancelButtonText: "ปิดหน้านี้",
+          }).then((result) => {
+              if(result.value){
+                window.location.href = 'Dowload.html?id=' + 555
+              }
+                var b = $scope.data;
+                var a = result;
+          });
+        $scope.pictureshow = '/pic/secret/'+Id+'.jpg';
+    }
+
+    $scope.setdatadowload = () =>{
+        var url = new URL(window.location.href);
+        var c = url.searchParams.get("id");
+        $scope.idDowload = c;
+    }
+
+
+
+})
