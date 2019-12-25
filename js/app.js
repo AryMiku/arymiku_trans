@@ -552,10 +552,11 @@ app.controller('secretCtrl',function($scope,$http){
     }
 
     $scope.seepicture = (Id) => {
+        var picture_path = doesFileExist('/pic/secret/'+Id+'.jpg');
         Swal.fire({
             title: 'Sweet!',
             text: 'Modal with a custom image.',
-            imageUrl: '/pic/secret/'+Id+'.jpg',
+            imageUrl: picture_path,
             imageWidth: 248,
             imageHeight: 350,
             imageAlt: 'Custom image',
@@ -564,7 +565,7 @@ app.controller('secretCtrl',function($scope,$http){
             cancelButtonText: "ปิดหน้านี้",
           }).then((result) => {
               if(result.value){
-                window.location.href = 'Dowload.html?id=' + 555
+                window.location.href = 'Dowload.html?id=' + Id
               }
                 var b = $scope.data;
                 var a = result;
@@ -576,8 +577,26 @@ app.controller('secretCtrl',function($scope,$http){
         var url = new URL(window.location.href);
         var c = url.searchParams.get("id");
         $scope.idDowload = c;
+        $scope.dataOnPage = _.find($scope.data, function(data){
+            return data.Id = $scope.idDowload
+        });
+        console.log($scope.dataOnPage);
     }
 
+    function doesFileExist(urlToFile)
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.open('HEAD', urlToFile, false);
+        xhr.send();
 
+        if (xhr.status == "404") {
+            console.log("File doesn't exist");
+            urlToFile = '/pic/secret/0.jpg'
+            return urlToFile;
+        } else {
+            console.log("File exists");
+            return urlToFile;
+        }
+    }
 
 })
