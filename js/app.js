@@ -541,7 +541,7 @@ app.controller('myCtrl', function($scope) {
     ]
 });
 
-app.controller('secretCtrl',function($scope,$http){
+app.controller('secretCtrl',function($scope,$http,$q){
 
       
     $scope.edragon = async function(){
@@ -549,6 +549,10 @@ app.controller('secretCtrl',function($scope,$http){
             $scope.data = res.data;
             console.log($scope.data)
         });
+        // let data = await GetData();
+        // $scope.data = data.data;
+        // console.log($scope.data);
+
     }
 
     $scope.seepicture = (Id) => {
@@ -573,7 +577,9 @@ app.controller('secretCtrl',function($scope,$http){
         $scope.pictureshow = '/pic/secret/'+Id+'.jpg';
     }
 
-    $scope.setdatadowload = () =>{
+    $scope.setdatadowload = async () =>{
+        let a = await GetData();
+        $scope.data = a.data;
         var url = new URL(window.location.href);
         var c = url.searchParams.get("id");
         $scope.idDowload = c;
@@ -597,6 +603,34 @@ app.controller('secretCtrl',function($scope,$http){
             console.log("File exists");
             return urlToFile;
         }
+    }
+
+    function GetData(){
+        var deferred = $q.defer();
+        $http.get('https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json').then(function (data) {
+            deferred.resolve(data);// เสร็จแล้วเอาไปเลย!!
+        });
+        return deferred.promise; //รอตามสัญญา ขอเวลาอีกไม่นาน
+    }
+
+
+    $scope.edragon2 = async function(){
+        $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json").then(function(res,status,xhr) {
+            $scope.data = res.data;
+            console.log($scope.data)
+            var url = new URL(window.location.href);
+            var c = url.searchParams.get("id");
+            $scope.idDowload = c;
+            $scope.picture_path = doesFileExist('/pic/secret/'+c+'.jpg');
+            $scope.dataOnPage = _.find($scope.data, function(data){
+                return data.Id == $scope.idDowload
+            });
+            console.log($scope.dataOnPage);
+        });
+        // let data = await GetData();
+        // $scope.data = data.data;
+        // console.log($scope.data);
+
     }
 
 })
