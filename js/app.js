@@ -539,6 +539,15 @@ app.controller('myCtrl', function($scope) {
             ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Nozoki%20Ana",
         }
     ]
+
+    $scope.Kyochuu_Rettou = [
+        {
+            Name : "OVA (ตอนเดียวจบ) => ",
+            MP4 : "https://drive.google.com/file/d/1p59aK-1VZvWvBEvaFQKRKJ4Wxa0P00ix/view",
+            MKV : "https://drive.google.com/file/d/1ySBGoz7VPQbPE3JvnfFT2pU74nK_FoxD/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kyochuu%20Rettou",
+        }
+    ]
 });
 
 app.controller('secretCtrl',function($scope,$http,$q){
