@@ -85,6 +85,72 @@ app.controller('myCtrl', function($scope) {
             gdrive : "https://goo.gl/TTGuD3",
             twoth : "https://2th.me/a/1028/f1041/3013107"
         },
+        {
+            Name : "ตอนที่ 139 => ",
+            mediafire : "https://bit.ly/2FyXs9f",
+            gdrive : "https://goo.gl/sgjoXs",
+            twoth : "https://2th.me/a/1028/f1041/3013034"
+        },
+        {
+            Name : "ตอนที่ 138 => ",
+            mediafire : "https://bit.ly/2H8ALdA",
+            gdrive : "https://goo.gl/KCnrZB",
+            twoth : "https://2th.me/a/1028/f1041/3012929"
+        },
+        {
+            Name : "ตอนที่ 137 => ",
+            mediafire : "https://bit.ly/2F8GCOk",
+            gdrive : "https://goo.gl/Bwa4Ub",
+            twoth : "https://2th.me/a/1028/f1041/3012928"
+        },
+        {
+            Name : "ตอนที่ 136 => ",
+            mediafire : "https://bit.ly/2BV2Cbp",
+            gdrive : "https://goo.gl/ZkyYKV",
+            twoth : "https://2th.me/a/1028/f1041/3012927"
+        },
+        {
+            Name : "ตอนที่ 135 => ",
+            mediafire : "https://bit.ly/2SuPl0t",
+            gdrive : "https://goo.gl/MTQUgc",
+            twoth : "https://2th.me/a/1028/f1041/3012926"
+        },
+        {
+            Name : "ตอนที่ 134 => ",
+            mediafire : "https://bit.ly/2AnHzyt",
+            gdrive : "https://goo.gl/Z46c4q",
+            twoth : "https://2th.me/a/1028/f1041/3012870"
+        },
+        {
+            Name : "ตอนที่ 133 => ",
+            mediafire : "https://bit.ly/2QUgk8R",
+            gdrive : "https://goo.gl/jqj8uC",
+            twoth : "https://2th.me/a/1028/f1041/3012869"
+        },
+        {
+            Name : "ตอนที่ 132 => ",
+            mediafire : "https://bit.ly/2EPFSh2",
+            gdrive : "https://goo.gl/DxCRjA",
+            twoth : "https://2th.me/a/1028/f1041/3012786"
+        },
+        {
+            Name : "ตอนที่ 131 => ",
+            mediafire : "https://bit.ly/2rpS2oc",
+            gdrive : "https://goo.gl/ZVkzzi",
+            twoth : "https://2th.me/a/1028/f1041/3012463"
+        },
+        {
+            Name : "ตอนที่ 130 => ",
+            mediafire : "https://bit.ly/2Syc1fV",
+            gdrive : "https://goo.gl/3WBTY7",
+            twoth : "https://2th.me/a/1028/f1041/3012459"
+        },
+        {
+            Name : "ตอนที่ 129 => ",
+            mediafire : "https://bit.ly/2KW8zsR",
+            gdrive : "https://goo.gl/xwoDGM",
+            twoth : "https://2th.me/a/1028/f1041/3012456"
+        },
     ];
     $scope.threeP = [
         {
