@@ -612,6 +612,12 @@ app.controller('myCtrl', function($scope) {
             MP4 : "https://drive.google.com/file/d/1p59aK-1VZvWvBEvaFQKRKJ4Wxa0P00ix/view",
             MKV : "https://drive.google.com/file/d/1ySBGoz7VPQbPE3JvnfFT2pU74nK_FoxD/view",
             ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kyochuu%20Rettou",
+        },
+        {
+            Name : "THE MOVIE (ตอนเดียวจบ) => ",
+            MP4 : "https://drive.google.com/file/d/1wFNaJI4wenBzxE8oq_htUMXzqLIMZve1/view",
+            MKV : "https://drive.google.com/file/d/1eGRBpahojTEBrZZmCITZxqeUnGLs21Sb/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/blob/master/Kyochuu%20Rettou/%5BErai-raws%5D%20Kyochuu%20Rettou%20-%20Movie%20%5B1080p%5D%5BMultiple%20Subtitle%5D.ass",
         }
     ]
 });
