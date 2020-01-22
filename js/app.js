@@ -163,6 +163,12 @@ app.controller('myCtrl', function($scope) {
             gdrive : "https://bit.ly/3atn3N7",
             twoth : "https://2th.me/a/1028/f1041/3012425/p5453220"
         },
+        {
+            Name : "ตอนที่ 126 => ",
+            mediafire : "https://bit.ly/2E1za6t",
+            gdrive : "https://goo.gl/xyuwht",
+            twoth : "https://2th.me/a/1028/f1041/3012423"
+        },
     ];
     $scope.threeP = [
         {
