@@ -612,6 +612,18 @@ app.controller('myCtrl', function($scope) {
             MP4 : "https://drive.google.com/file/d/13U7fbChC_SyI3WoCLwgvbEbt2N2Kw8cw/view",
             MKV : "https://drive.google.com/file/d/120ChOEsK_jiO2q3jT1btDEj2IcX51faF/view",
             ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Azur%20Lane",
+        },
+        {
+            Name : "ตอนที่ 3 => ",
+            MP4 : "https://drive.google.com/file/d/1LotiiB5U2y2dtyPgNEGDNGEvuAyHP2yM/view",
+            MKV : "https://drive.google.com/file/d/1KJY-unzoQOxwwdxK5cOMVa8ciD2xnyux/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Azur%20Lane",
+        },
+        {
+            Name : "ตอนที่ 4 => ",
+            MP4 : "https://drive.google.com/file/d/1djFk6yTqMXfr1OSt5-vlsv59mUtvVkrZ/view",
+            MKV : "https://drive.google.com/file/d/1DmBmcixAfOtJvrI-UwN3kv4NqVsN_gOO/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Azur%20Lane",
         }
     ]
 
