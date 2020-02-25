@@ -443,6 +443,10 @@ app.controller('myCtrl', function($scope) {
         {
             Name : "เล่มที่ 5 => ",
             mega : "https://mega.nz/#!rshSwKBY!HTsyK0lsbkgdjOSOog7njTNyZephbK6UjncbuAVfVRQ"
+        },
+        {
+            Name : "เล่มที่ 6 => ",
+            gdrive : "https://drive.google.com/open?id=1nz_UIoHgr6Los66cn9cX5WDoH_mDh0RA"
         }
     ]
 
