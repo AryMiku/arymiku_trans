@@ -169,6 +169,72 @@ app.controller('myCtrl', function($scope) {
             gdrive : "https://goo.gl/xyuwht",
             twoth : "https://2th.me/a/1028/f1041/3012423"
         },
+        {
+            Name : "ตอนที่ 125 => ",
+            mediafire : "https://bit.ly/2DZINm9",
+            gdrive : "https://goo.gl/3Vu2wC",
+            twoth : "https://2th.me/a/1028/f1041/3012392"
+        },
+        {
+            Name : "ตอนที่ 124 => ",
+            mediafire : "https://bit.ly/2F5qmhT",
+            gdrive : "https://goo.gl/6eRJHy",
+            twoth : "https://2th.me/a/1028/f1041/3011949"
+        },
+        {
+            Name : "ตอนที่ 123 => ",
+            mediafire : "https://bit.ly/2J9cFwG",
+            gdrive : "https://goo.gl/DTFtV6",
+            twoth : "https://2th.me/a/1028/f1041/3011698"
+        },
+        {
+            Name : "ตอนที่ 122 => ",
+            mediafire : "https://bit.ly/2CfFW7F",
+            gdrive : "https://goo.gl/Va4mRA",
+            twoth : "https://2th.me/a/1028/f1041/3011569"
+        },
+        {
+            Name : "ตอนที่ 121 => ",
+            mediafire : "https://bit.ly/2Rvyjz3",
+            gdrive : "https://goo.gl/agZaYD",
+            twoth : "https://2th.me/a/1028/f1041/3011454"
+        },
+        {
+            Name : "ตอนที่ 120 => ",
+            mediafire : "https://bit.ly/2QjROJn",
+            gdrive : "https://goo.gl/BQ7kny",
+            twoth : "https://2th.me/a/1028/f1041/3011331"
+        },
+        {
+            Name : "ตอนที่ 119 => ",
+            mediafire : "https://bit.ly/2N1FyLP",
+            gdrive : "https://goo.gl/c2KqoN",
+            twoth : "https://2th.me/a/1028/f1041/3011276"
+        },
+        {
+            Name : "ตอนที่ 118 => ",
+            mediafire : "https://bit.ly/2xCkcim",
+            gdrive : "https://goo.gl/EMkui7",
+            twoth : "https://2th.me/a/1028/f1041/3011187"
+        },
+        {
+            Name : "ตอนที่ 117 => ",
+            mediafire : "https://bit.ly/2oTRN3l",
+            gdrive : "https://goo.gl/PpLnJK",
+            twoth : "https://2th.me/a/1028/f1041/3011077"
+        },
+        {
+            Name : "ตอนที่ 116 => ",
+            mediafire : "https://bit.ly/2Q9wLKD",
+            gdrive : "https://goo.gl/EA6qn8",
+            twoth : "https://2th.me/a/1028/f1041/3010921"
+        },
+        {
+            Name : "ตอนที่ 115 => ",
+            mediafire : "https://bit.ly/2wJAHt8",
+            gdrive : "https://goo.gl/u9WLGY",
+            twoth : "https://2th.me/a/1028/f1041/3010897"
+        },
     ];
     $scope.threeP = [
         {
