@@ -723,10 +723,85 @@ app.controller('myCtrl', function($scope) {
 
     $scope.Shadowverse = [
         {
-            Name : "01 => ",
+            Name : "ตอนที่ 01 => ",
             MP4 : "https://drive.google.com/file/d/1HM_wSO8lPWor9aTF_L8Yj7aouL05AHt6/view",
             MKV : "#",
             ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Shadowverse",
+        },
+    ]
+
+    $scope.Kandakawa = [
+        {
+            Name : "ตอนที่ 01 => ",
+            MP4 : "https://drive.google.com/file/d/1UOTfbktzKwfvWV4rvEv1nKBzSsAkukfm/view",
+            MKV : "https://drive.google.com/file/d/1Edgp-yKk4LxDD0-tsPS8zaZEQc3dfIP7/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 02 => ",
+            MP4 : "https://drive.google.com/file/d/1xkVSSKC3gTWzscpZLQVilcMnGpQjcYPu/view",
+            MKV : "https://drive.google.com/file/d/1pmdxbp2Ea8-cOu4srg4aQS6y9o4AByB0/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 03 => ",
+            MP4 : "https://drive.google.com/file/d/1LsX9krkM1wHxJk840yPGR6fWc_el_z4H/view",
+            MKV : "https://drive.google.com/file/d/1UIsJvYLEh_gRIH0PwQ1UyWyLtobKFhWD/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 04 => ",
+            MP4 : "https://drive.google.com/file/d/1OttNShyEwZ7prlJdTr8KjMoatKCIB_ao/view",
+            MKV : "https://drive.google.com/file/d/1KHf0K9MjVbBJmJtfP91Notc0x8jQUov4/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 05 => ",
+            MP4 : "https://drive.google.com/file/d/14HPqq6AVyaxUJx5r1qIQAsyNc5LEtd-g/view",
+            MKV : "https://drive.google.com/file/d/1e9VtCDUSfQmzpnDp4IKf4wUZOOroEUcH/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 06 => ",
+            MP4 : "https://drive.google.com/file/d/1jv7RSePHrHyM7aO04rUGHBrJN3n49tV7/view",
+            MKV : "https://drive.google.com/file/d/1L-NRjGVnqRTRLBdBGNhcXqiRoiXaG2gt/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 07 => ",
+            MP4 : "https://drive.google.com/file/d/11V6HyqPGnIyqkAVVIc9jZv6pcbisVsSa/view",
+            MKV : "https://drive.google.com/file/d/1Lqr-shuER7wvkRccP_sQZYj3S_iI9NKd/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 08 => ",
+            MP4 : "https://drive.google.com/file/d/17SlaRlFLBuSN5b9Njsfzijz06pN8LGtP/view",
+            MKV : "https://drive.google.com/file/d/1TARTY5Ce8PWOlwseDzX57BtNK1mesTJa/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 09 => ",
+            MP4 : "https://drive.google.com/file/d/1yp_Yc_4jk-xWvEqQi3auC_P6BOkgfAwM/view",
+            MKV : "https://drive.google.com/file/d/184e8LJQVX_lWgRoqFID65J1LHg9vhm8h/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 10 => ",
+            MP4 : "https://drive.google.com/file/d/1PPqBJ0tOJZkp4FUpxoxeUMN_obJVfhww/view",
+            MKV : "https://drive.google.com/file/d/134vWC6Y59eHf2KYHkpKaX8Sb3TMqg4ih/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 11 => ",
+            MP4 : "https://drive.google.com/file/d/1A2EYvhjexyzl0vLYqXPe38ReGitOR1km/view",
+            MKV : "https://drive.google.com/file/d/1xMFk_P9apKQ7CyH6TKMn7VxZNvGkf96y/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
+        },
+        {
+            Name : "ตอนที่ 12 => ",
+            MP4 : "https://drive.google.com/file/d/1yq2U-kV2xnrUZ3Vmz6hgOwiJiRsmWmwB/view",
+            MKV : "https://drive.google.com/file/d/1thxYB29KHum_YR9i_zy_gH-82T1t-uoz/view",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
         },
     ]
 });
