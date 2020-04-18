@@ -720,6 +720,15 @@ app.controller('myCtrl', function($scope) {
             ASS : "https://github.com/AryMiku/ARC_V_SUB/blob/master/Kyochuu%20Rettou/%5BErai-raws%5D%20Kyochuu%20Rettou%20-%20Movie%20%5B1080p%5D%5BMultiple%20Subtitle%5D.ass",
         }
     ]
+
+    $scope.Shadowverse = [
+        {
+            Name : "01 => ",
+            MP4 : "https://drive.google.com/file/d/1HM_wSO8lPWor9aTF_L8Yj7aouL05AHt6/view",
+            MKV : "#",
+            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Shadowverse",
+        },
+    ]
 });
 
 app.controller('secretCtrl',function($scope,$http,$q){
