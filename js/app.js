@@ -769,7 +769,7 @@ app.controller('myCtrl', function($scope) {
         },
         {
             Name : "ตอนที่ 07 => ",
-            MP4 : "https://drive.google.com/file/d/11V6HyqPGnIyqkAVVIc9jZv6pcbisVsSa/view",
+            MP4 : "https://drive.google.com/file/d/1M6RUGu73mRKzHLMn9TO0OijtJdf2KEqS/view",
             MKV : "https://drive.google.com/file/d/1Lqr-shuER7wvkRccP_sQZYj3S_iI9NKd/view",
             ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
         },
@@ -804,6 +804,8 @@ app.controller('myCtrl', function($scope) {
             ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Kandagawa%20Jet%20Girls",
         },
     ]
+
+    $scope.aa = "https://www.google.com"
 });
 
 app.controller('secretCtrl',function($scope,$http,$q){
@@ -897,5 +899,7 @@ app.controller('secretCtrl',function($scope,$http,$q){
         // console.log($scope.data);
 
     }
+
+    $scope.aaa = "ddd";
 
 })
