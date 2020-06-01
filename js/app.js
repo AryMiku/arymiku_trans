@@ -235,6 +235,96 @@ app.controller('myCtrl', function($scope) {
             gdrive : "https://goo.gl/u9WLGY",
             twoth : "https://2th.me/a/1028/f1041/3010897"
         },
+        {
+            Name : "ตอนที่ 114 => ",
+            mediafire : "https://bit.ly/2oHDZJj",
+            gdrive : "https://goo.gl/KmXHsG",
+            twoth : "https://2th.me/a/1028/f1041/3010877"
+        },
+        {
+            Name : "ตอนที่ 113 => ",
+            mediafire : "https://bit.ly/2MGiEhM",
+            gdrive : "https://goo.gl/U8v8Eq",
+            twoth : "https://2th.me/a/1028/f1041/3010804"
+        },
+        {
+            Name : "ตอนที่ 112 => ",
+            mediafire : "https://bit.ly/2MWzs3m",
+            gdrive : "https://goo.gl/v3qzDJ",
+            twoth : "https://2th.me/a/1028/f1041/3010657"
+        },
+        {
+            Name : "ตอนที่ 111 => ",
+            mediafire : "https://bit.ly/2MBLQqc",
+            gdrive : "https://goo.gl/Q73Mei",
+            twoth : "https://2th.me/a/1028/f1041/3010572"
+        },
+        {
+            Name : "ตอนที่ 110 => ",
+            mediafire : "http://www.mediafire.com/file/ml1omp3fka6nqwn/%255BAryMiku%255D_Brawling_Go_-_110_%255BTH%255D.rar/file",
+            gdrive : "https://drive.google.com/drive/folders/1Xg9ppaFfboA0jjYd2k8tdcdDStJnGGID?usp=sharing",
+            twoth : "https://2th.me/a/1028/f1041/3010225"
+        },
+        {
+            Name : "ตอนที่ 109 => ",
+            mediafire : "https://bit.ly/2LgcHql",
+            gdrive : "https://goo.gl/Qw2cdx",
+            twoth : "https://2th.me/a/1028/f1041/3009772"
+        },
+        {
+            Name : "ตอนที่ 108 => ",
+            mediafire : "https://bit.ly/2KspDcf",
+            gdrive : "https://goo.gl/SNhqmU",
+            twoth : "https://2th.me/a/1028/f1041/3009563"
+        },
+        {
+            Name : "ตอนที่ 107 => ",
+            mediafire : "http://www.mediafire.com/file/65s5dc685bj0hng/%255BAryMiku%255D_Brawling_Go_-_107_%255BTH%255D.rar/file",
+            gdrive : "https://drive.google.com/drive/folders/1jXtHVsXQlqbRyqNXK4hYROyPk364X1Xf?usp=sharing",
+            twoth : "https://2th.me/a/1028/f1041/3009464"
+        },
+        {
+            Name : "ตอนที่ 106 => ",
+            mediafire : "https://bit.ly/2sUlkLY",
+            gdrive : "https://goo.gl/XhsbCH",
+            twoth : "https://2th.me/a/1028/f1041/3009274"
+        },
+        {
+            Name : "ตอนที่ 105 => ",
+            mediafire : "https://bit.ly/2kYUcI7",
+            gdrive : "https://goo.gl/3Sauu9",
+            twoth : "https://2th.me/a/1028/f1041/3009266"
+        },
+        {
+            Name : "ตอนที่ 104 => ",
+            mediafire : "https://bit.ly/2kBOLyB",
+            gdrive : "https://goo.gl/fePPhk",
+            twoth : "https://2th.me/a/1028/f1041/3009082"
+        },
+        {
+            Name : "ตอนที่ 103 => ",
+            mediafire : "https://bit.ly/2xmTJIB",
+            gdrive : "https://goo.gl/NrYudP",
+            twoth : "https://2th.me/a/1028/f1041/3009067"
+        },
+        {
+            Name : "ตอนที่ 102 => ",
+            mediafire : "http://www.mediafire.com/file/ahv8uvnnq1l2r6x/%255BAryMiku%255D_Brawling_Go_-_102_%255BTH%255D.rar/file",
+            gdrive : "https://drive.google.com/drive/folders/1vFiU2MytfRMRYeOtqdW0iuaNDBNjOZfg?usp=sharing",
+            twoth : "https://2th.me/a/1028/f1041/3008457"
+        },
+        {
+            Name : "ตอนที่ 101 => ",
+            mediafire : "http://www.mediafire.com/file/sgixxotsdcwvzjx/%255BAryMiku%255D_Brawling_Go_-_101_%255BTH%255D.rar/file",
+            gdrive : "https://drive.google.com/drive/folders/1GxSSUsAKD7AmECYBRT6-L_UG4bZQY3Fx?usp=sharing",
+            twoth : "https://2th.me/a/1028/f1041/3008305"
+        },
+        {
+            Name : "ตอนที่ 100 => ",
+            mediafire : "https://bit.ly/2F6m0Sw",
+            gdrive : "https://goo.gl/VXmPD8",
+            twoth : "https://2th.me/a/1028/f1041/3008205"
+        },
     ];
     $scope.threeP = [
         {
