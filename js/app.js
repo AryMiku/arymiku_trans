@@ -898,6 +898,8 @@ app.controller('myCtrl', function($scope) {
     $scope.aa = "https://www.google.com"
 });
 
+/*Table Controller*/ 
+
 app.controller('secretCtrl',function($scope,$http,$q){
 
       
@@ -987,9 +989,22 @@ app.controller('secretCtrl',function($scope,$http,$q){
         // let data = await GetData();
         // $scope.data = data.data;
         // console.log($scope.data);
-
     }
 
     $scope.aaa = "ddd";
 
+
+
 })
+
+app.directive('myPostRepeatDirective', function() {
+  return function(scope, element, attrs) {
+    if (scope.$last){
+      $('#example').DataTable({
+        "columnDefs": [
+          { "width": "75%", "targets": 0 },
+        ]
+      });
+    }
+  };
+});
