@@ -905,13 +905,16 @@ app.controller('secretCtrl',function($scope,$http,$q){
       
     $scope.edragon = async function(){
         $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json").then(function(res,status,xhr) {
+            /*เอา Data ดึงไปใช้ตรงๆที่หน้าเมนูเลย*/
             $scope.data = res.data;
-            console.log($scope.data)
+            /*เอาไว้นับว่าควรทำ Pagination*/
+            let pages = parseInt($scope.data.length / 8) + 1; //หน้าหนึ่งไม่เกิน 8 เรื่อง
+            $scope.page = [];
+            for(let i = 0; i < pages; i++){
+                $scope.page.push(i+1);
+            }
+            console.log($scope.page);
         });
-        // let data = await GetData();
-        // $scope.data = data.data;
-        // console.log($scope.data);
-
     }
 
     $scope.seepicture = (Id) => {
@@ -992,6 +995,10 @@ app.controller('secretCtrl',function($scope,$http,$q){
     }
 
     $scope.aaa = "ddd";
+
+    $scope.changepage = function (pa) {
+        console.log($scope.data);
+    }
 
 
 
