@@ -895,6 +895,14 @@ app.controller('myCtrl', function($scope) {
         },
     ]
 
+    $scope.Pastels = [
+        {
+            Name : "Pastel ตอนที่ 001",
+            GoogleDrive : "https://drive.google.com/file/d/1bJZslr0ncWN1jerBk6rSwgSvL9h_HGec/view?usp=sharing",
+            Picz : "https://www.picz.in.th/album/pastel-001.fcphQ"
+        },
+    ]
+
     $scope.aa = "https://www.google.com"
 });
 
@@ -998,6 +1006,23 @@ app.controller('secretCtrl',function($scope,$http,$q){
 
     $scope.changepage = function (pa) {
         console.log($scope.data);
+    };
+
+    $scope.GetClassType = function(Type){
+        let classselect = '';
+        if(Type == 'Anime SubThai'){
+            classselect = 'badge badge-animesubth'
+        }
+        else if(Type == 'Manga TH'){
+            classselect = 'badge badge-mangath'
+        }
+        else if(Type == 'Anime Thai'){
+            classselect = 'badge badge-animethai'
+        }
+        else if(Type == 'Manga JP'){
+            classselect = 'badge badge-mangajp'
+        }
+        return classselect
     }
 
 
