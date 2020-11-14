@@ -912,6 +912,12 @@ app.controller('secretCtrl',function($scope,$http,$q){
 
       
     $scope.edragon = async function(){
+        Swal.fire({
+            title: 'กำลังโหลดจ้า...',
+            showConfirmButton: false,
+            allowOutsideClick: false,
+        });
+        swal.showLoading();
         $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json").then(function(res,status,xhr) {
             /*เอา Data ดึงไปใช้ตรงๆที่หน้าเมนูเลย*/
             $scope.data = res.data;
@@ -922,6 +928,7 @@ app.controller('secretCtrl',function($scope,$http,$q){
                 $scope.page.push(i+1);
             }
             console.log($scope.page);
+            swal.close();
         });
     }
 
@@ -959,8 +966,9 @@ app.controller('secretCtrl',function($scope,$http,$q){
         console.log($scope.dataOnPage);
     }
 
-    function doesFileExist(urlToFile)
+    function  doesFileExist(urlToFile)
     {
+        //ท่านี้ไม่ดี มันมี error 
         var xhr = new XMLHttpRequest();
         xhr.open('HEAD', urlToFile, false);
         xhr.send();
@@ -991,7 +999,7 @@ app.controller('secretCtrl',function($scope,$http,$q){
             var url = new URL(window.location.href);
             var c = url.searchParams.get("id");
             $scope.idDowload = c;
-            $scope.picture_path = doesFileExist('/pic/secret/'+c+'.jpg');
+            $scope.picture_path = doesFileExist('/pic/secret/' + c + '.jpg');
             $scope.dataOnPage = _.find($scope.data, function(data){
                 return data.Id == $scope.idDowload
             });
@@ -1003,6 +1011,8 @@ app.controller('secretCtrl',function($scope,$http,$q){
     }
 
     $scope.aaa = ["Hentai","Comedy","16+","School","Love"];
+
+ 
 
     $scope.changepage = function (pa) {
         console.log($scope.data);
