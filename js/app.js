@@ -1002,7 +1002,7 @@ app.controller('secretCtrl',function($scope,$http,$q){
         // console.log($scope.data);
     }
 
-    $scope.aaa = "ddd";
+    $scope.aaa = ["Hentai","Comedy","16+","School","Love"];
 
     $scope.changepage = function (pa) {
         console.log($scope.data);
@@ -1025,6 +1025,32 @@ app.controller('secretCtrl',function($scope,$http,$q){
         return classselect
     }
 
+    $scope.SetStoryType = function(Story){
+        let classselect = '';
+        switch(Story){
+            case "Hentai" :
+                classselect = 'badge badge-hentai'
+                break;
+            case "Comedy" :
+                classselect = 'badge badge-comedy'
+                break;
+            case "16+" :
+                classselect = 'badge badge-16'
+                break;
+            case "School" :
+                classselect = 'badge badge-school'
+                break;
+            case "Love" :
+                classselect = 'badge badge-love'
+                break;
+            default :
+                classselect = 'badge badge-none'
+                break;
+        }
+        return classselect;
+    }
+
+
 
 
 })
@@ -1034,7 +1060,7 @@ app.directive('myPostRepeatDirective', function() {
     if (scope.$last){
       $('#example').DataTable({
         "columnDefs": [
-          { "width": "75%", "targets": 0 },
+          { "width": "50%", "targets": 0 },
         ]
       });
     }
