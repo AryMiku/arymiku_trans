@@ -325,6 +325,66 @@ app.controller('myCtrl', function($scope) {
             gdrive : "https://goo.gl/VXmPD8",
             twoth : "https://2th.me/a/1028/f1041/3008205"
         },
+        {
+            Name : "ตอนที่ 99 => ",
+            mediafire : "http://www.mediafire.com/file/0n09zpwjwp06bdj/%255BAryMiku%255D_Brawling_Go_-_99_%255BTH%255D.rar/file",
+            gdrive : "https://drive.google.com/drive/folders/1xFEgNDypBGj7ZwqKrZqa2WcyQ5u5reK3",
+            twoth : "https://2th.me/a/1028/f1041/3008098"
+        },
+        {
+            Name : "ตอนที่ 98 => ",
+            mediafire : "http://www.mediafire.com/file/aps0klv74mzljuk/%255BAryMiku%255D_Brawling_Go_-_98_%255BTH%255D.rar/file",
+            gdrive : "https://drive.google.com/drive/folders/1r6iZ51qvLI9J0nnC2u0ElpbGt0eeUE5B",
+            twoth : "https://2th.me/a/1028/f1041/3007916"
+        },
+        {
+            Name : "ตอนที่ 97 => ",
+            mediafire : "https://bit.ly/2GHYiAU",
+            gdrive : "https://drive.google.com/drive/folders/17XkQbN_FveoVl_OO2MusIXSig0k4zrA6",
+            twoth : "https://2th.me/a/1028/f1041/3007801"
+        },
+        {
+            Name : "ตอนที่ 96 => ",
+            mediafire : "http://bit.ly/2puiVpw",
+            gdrive : "https://drive.google.com/drive/folders/1WII1mzwqBEM0urY1qmx7XuB7eec5Wpe2",
+            twoth : "https://2th.me/a/1028/f1041/3007579"
+        },
+        {
+            Name : "ตอนที่ 95 => ",
+            mediafire : "http://bit.ly/2rOnVK7",
+            gdrive : "https://drive.google.com/drive/folders/1T8OP88buzw5lkYAT0kIP0FyeREzDk3dY",
+            twoth : "https://2th.me/a/1028/f1041/3006714"
+        },
+        {
+            Name : "ตอนที่ 94 => ",
+            mediafire : "http://bit.ly/2DAb56K",
+            gdrive : "https://drive.google.com/drive/folders/1bZ1Vx_IYl1Ps-70InazrL6ARZrxG9MjL",
+            twoth : "https://2th.me/a/1028/f1041/3006565"
+        },
+        {
+            Name : "ตอนที่ 93 => ",
+            mediafire : "http://bit.ly/2FCJr7g",
+            gdrive : "https://drive.google.com/drive/folders/1XhjFEpdSRIuNU_qP8FtyTc4xkFiTSMA9",
+            twoth : "https://2th.me/a/1028/f1041/3006429"
+        },
+        {
+            Name : "ตอนที่ 92 => ",
+            mediafire : "http://bit.ly/2DpStnt",
+            gdrive : "https://drive.google.com/drive/folders/1ibu5Uqf5C5720mUpq5w2tgIS3bQrD2oA",
+            twoth : "https://2th.me/a/1028/f1041/3006428"
+        },
+        {
+            Name : "ตอนที่ 91 => ",
+            mediafire : "http://bit.ly/2CMioEP",
+            gdrive : "https://drive.google.com/drive/folders/1EmezV3CD-3uwWQ8BJqHTyD0zsiBMIUfa",
+            twoth : "https://2th.me/a/1028/f1041/3006344"
+        },
+        {
+            Name : "ตอนที่ 90 => ",
+            mediafire : "http://bit.ly/2mizQKP",
+            gdrive : "https://drive.google.com/drive/folders/1423BNbZ3NzGTdASDPZugMgc7vtUCAtyE",
+            twoth : "https://2th.me/a/1028/f1041/3006342"
+        },
     ];
     $scope.threeP = [
         {
