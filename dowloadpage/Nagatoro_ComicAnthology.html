@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>AryMiku - Please Don't Bully Me Nagatoro</title>
+  <title>AryMiku - Ijiranaide, Nagatoro-san: Comic Anthology</title>
   <link rel="icon" href="/icon/favicon.jpg" type="image/x-icon"> 
   <link rel="shortcut icon" href="/icon/favicon.jpg" type="image/x-icon">
 
@@ -64,24 +64,25 @@
   <br><br><br><br>
   <div class="container" ng-app="myApp" ng-controller="myCtrl">
     <div class="text-center">
-      <div><h1>Please Don't Bully Me Nagatoro</h1></div><br>
-      <img src="/pic/nagatoro.jpg" alt="" class="img-fluid">
+      <div><h1>Ijiranaide, Nagatoro-san: Comic Anthology</h1></div><br>
+      <img src="/pic/naga.jpg" alt="" class="img-fluid">
     </div>
     <div>มังงะ แปลไทย</div><br>
-            <div>ดาวโหลดได้ตามปุ่มข้างล่างนี้</div><br>
-            <div class="alert alert-primary" role="alert">
-                ลิงค์สำหรับการดาวโหลด
-            </div>
-            <div ng-repeat="brawling in nagatoro">
-              {{brawling.Name}}
-              <a target="_blank" class="btn btn-outline-primary" href="{{brawling.mega}}">MEGA</a>
-              <!-- <a target="_blank" class="btn btn-outline-primary" href="{{brawling.twoth}}">2.th</a>-->
-              <a target="_blank" class="btn btn-outline-primary" href="{{brawling.gdrive}}">Google Drive</a><br><br> 
-            </div>
-            <br>
-            <div class="alert alert-danger" role="alert">
-                ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
-            </div> 
+    <div>ปล. สำหรับคนอยากได้ตัวไฟล์เป็นดาวโหลด มันจะอยู่กับตัวเล่มเลยนะครับ ซึ่งก็หาโหลดได้จากในเว็บเลย</div><br>
+    <div>ดาวโหลดได้ตามปุ่มข้างล่างนี้</div><br>     
+    <div class="alert alert-primary" role="alert">
+        ลิงค์สำหรับการดาวโหลด
+    </div>
+    <div ng-repeat="brawling in nagatoro_ComicAnthology">
+      {{brawling.Name}}
+      <!-- <a target="_blank" class="btn btn-outline-primary" href="{{brawling.mega}}">MEGA</a> -->
+      <!-- <a target="_blank" class="btn btn-outline-primary" href="{{brawling.twoth}}">2.th</a>-->
+      <a target="_blank" class="btn btn-outline-primary" href="{{brawling.mangadex}}">MangaDex</a><br><br> 
+    </div>
+    <br>
+    <div class="alert alert-danger" role="alert">
+        ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
+    </div> 
   <!-- /.container -->
   </div><br>
     <!-- Footer -->
