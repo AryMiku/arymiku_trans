@@ -983,6 +983,8 @@ app.controller('myCtrl', function($scope) {
     ]
 
     $scope.aa = "https://www.google.com"
+
+
 });
 
 /*Table Controller*/ 
@@ -1072,17 +1074,18 @@ app.controller('secretCtrl',function($scope,$http,$q){
 
 
     $scope.edragon2 = async function(){
-        $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json").then(function(res,status,xhr) {
+        var url = new URL(window.location.href);
+        var c = url.searchParams.get("id");
+        $scope.idDowload = c;
+        var dowloadlink = "https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/" + c + ".json"
+        $http.get(dowloadlink).then(function(res) {
             $scope.data = res.data;
-            console.log($scope.data)
-            var url = new URL(window.location.href);
-            var c = url.searchParams.get("id");
-            $scope.idDowload = c;
-            $scope.picture_path = doesFileExist('/pic/secret/' + c + '.jpg');
-            $scope.dataOnPage = _.find($scope.data, function(data){
-                return data.Id == $scope.idDowload
-            });
-            console.log($scope.dataOnPage);
+            $scope.picture_path = $scope.data.Picture;//doesFileExist('/pic/secret/' + c + '.jpg');
+            // $scope.dataOnPage = _.find($scope.data, function(data){
+            //     return data.Id == $scope.idDowload
+            // });
+            //console.log($scope.dataOnPage);
+            $scope.dataOnPage = $scope.data;
         });
         // let data = await GetData();
         // $scope.data = data.data;
@@ -1139,6 +1142,13 @@ app.controller('secretCtrl',function($scope,$http,$q){
         return classselect;
     }
 
+    $scope.ShowPictureHover = function(Id){
+        $scope.aaa = '/pic/secret/'+Id+'.jpg'
+        let a = "<center><img id='bank2' src="+$scope.aaa+" width='248px' height='350px'></center>"
+        $("#bank").append(a);
+        $scope.$apply();
+
+    }
 
 
 
@@ -1154,4 +1164,19 @@ app.directive('myPostRepeatDirective', function() {
       });
     }
   };
+});
+
+app.directive('bsTooltip', function(){
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs){
+            $(element).hover(function(){
+                // on mouseenter
+                scope.ShowPictureHover(scope.a.Id);
+            }, function(){
+                // on mouseleave
+                $("#bank2").remove();
+            });
+        }
+    };
 });
