@@ -385,6 +385,546 @@ app.controller('myCtrl', function($scope) {
             gdrive : "https://drive.google.com/drive/folders/1423BNbZ3NzGTdASDPZugMgc7vtUCAtyE",
             twoth : "https://2th.me/a/1028/f1041/3006342"
         },
+        {
+            Name : "ตอนที่ 89 => ",
+            mediafire : "http://bit.ly/2yn2sFX",
+            gdrive : "https://goo.gl/RQpvxa",
+            twoth : "https://2th.me/a/1028/f1041/3006326"
+        },
+        {
+            Name : "ตอนที่ 88 => ",
+            mediafire : "http://bit.ly/2AhZRyU",
+            gdrive : "https://goo.gl/dZCd3j",
+            twoth : "https://2th.me/a/1028/f1041/3005835"
+        },
+        {
+            Name : "ตอนที่ 87 => ",
+            mediafire : "http://bit.ly/2h2p3BM",
+            gdrive : "https://goo.gl/Veafa5",
+            twoth : "https://2th.me/a/1028/f1041/3004723"
+        },
+        {
+            Name : "ตอนที่ 86 => ",
+            mediafire : "http://bit.ly/2yBJEGO",
+            gdrive : "https://goo.gl/znw3NM",
+            twoth : "https://2th.me/a/1028/f1041/3004625"
+        },
+        {
+            Name : "ตอนที่ 85 => ",
+            mediafire : "http://bit.ly/2fDUB04",
+            gdrive : "https://goo.gl/EHRcpd",
+            twoth : "https://2th.me/a/1028/f1041/3003933"
+        },
+        {
+            Name : "ตอนที่ 84 => ",
+            mediafire : "http://bit.ly/2x7mmpl",
+            gdrive : "https://goo.gl/tPR1QN",
+            twoth : "https://2th.me/a/1028/f1041/3003910"
+        },
+        {
+            Name : "ตอนที่ 83 => ",
+            mediafire : "http://bit.ly/2wTrX4E",
+            gdrive : "https://goo.gl/vAmGLT",
+            twoth : "https://2th.me/a/1028/f1041/3003388"
+        },
+        {
+            Name : "ตอนที่ 82 => ",
+            mediafire : "http://bit.ly/2uKqV78",
+            gdrive : "https://goo.gl/VwKnz5",
+            twoth : "https://2th.me/a/1028/f1041/3003104"
+        },
+        {
+            Name : "ตอนที่ 81 => ",
+            mediafire : "http://bit.ly/2u8hPVz",
+            gdrive : "https://goo.gl/s8Y6BM",
+            twoth : "https://2th.me/a/1028/f1041/3002851"
+        },
+        {
+            Name : "ตอนที่ 80 => ",
+            mediafire : "http://bit.ly/2tFlGVE",
+            gdrive : "https://goo.gl/7s1ySi",
+            twoth : "https://2th.me/a/1028/f1041/3002741"
+        },
+        {
+            Name : "ตอนที่ 79 => ",
+            mediafire : "http://bit.ly/2uGbuA3",
+            gdrive : "https://goo.gl/LZddEx",
+            twoth : "https://2th.me/a/1028/f1041/3002548"
+        },
+        {
+            Name : "ตอนที่ 78 => ",
+            mediafire : "http://bit.ly/2uBZi30",
+            gdrive : "https://goo.gl/MgySSf",
+            twoth : "https://2th.me/a/1028/f1041/3002438"
+        },
+        {
+            Name : "ตอนที่ 77 => ",
+            mediafire : "http://bit.ly/2uj3GnQ",
+            gdrive : "https://goo.gl/4cBsk4",
+            twoth : "https://2th.me/a/1028/f1041/3002341"
+        },
+        {
+            Name : "ตอนที่ 76 => ",
+            mediafire : "http://bit.ly/2sBAV1F",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3002217"
+        },
+        {
+            Name : "ตอนที่ 75 => ",
+            mediafire : "http://bit.ly/2uv0QJE",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3002179"
+        },
+        {
+            Name : "ตอนที่ 74 => ",
+            mediafire : "http://bit.ly/2sdsqcX",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3002074"
+        },
+        {
+            Name : "ตอนที่ 73 => ",
+            mediafire : "http://bit.ly/2uhYwEI",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001985"
+        },
+        {
+            Name : "ตอนที่ 72 => ",
+            mediafire : "http://bit.ly/2tJumeb",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001897"
+        },
+        {
+            Name : "ตอนที่ 71 => ",
+            mediafire : "http://bit.ly/2sDgmUE",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001852"
+        },
+        {
+            Name : "ตอนที่ 70 => ",
+            mediafire : "http://bit.ly/2tXtjH5",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001816"
+        },
+        {
+            Name : "ตอนที่ 69 => ",
+            mediafire : "http://bit.ly/2sFrBuq",
+            gdrive : "",
+            twoth : "https://2th.me/a/h_manga/f1028/3001807"
+        },
+        {
+            Name : "ตอนที่ 68 => ",
+            mediafire : "http://bit.ly/2sTF1F9",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001786"
+        },
+        {
+            Name : "ตอนที่ 67 => ",
+            mediafire : "http://bit.ly/2tx4P80",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001782"
+        },
+        {
+            Name : "ตอนที่ 66 => ",
+            mediafire : "http://bit.ly/2rChwwW",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001760"
+        },
+        {
+            Name : "ตอนที่ 65 => ",
+            mediafire : "http://bit.ly/2sRBFTq",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001743"
+        },
+        {
+            Name : "ตอนที่ 64 => ",
+            mediafire : "http://bit.ly/2sGXBjB",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001740"
+        },
+        {
+            Name : "ตอนที่ 63 => ",
+            mediafire : "http://bit.ly/2rCDl3i",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001658"
+        },
+        {
+            Name : "ตอนที่ 62 => ",
+            mediafire : "http://bit.ly/2tdKhRF",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001649"
+        },
+        {
+            Name : "ตอนที่ 61 => ",
+            mediafire : "http://bit.ly/2sAvtPp",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001640"
+        },
+        {
+            Name : "ตอนที่ 60 => ",
+            mediafire : "http://bit.ly/2rnJDj7",
+            gdrive : "",
+            twoth : "https://2th.me/a/1028/f1041/3001618"
+        },
+        {
+            Name : "ตอนที่ 59 => ",
+            mediafire : "http://bit.ly/2tn57h1",
+            gdrive : "",
+            twoth : "https://2th.me/a/h_manga/f1028/3001586"
+        },
+        {
+            Name : "ตอนที่ 58 => ",
+            mediafire : "http://bit.ly/2rvJ1ra",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=14250.0"
+        },
+        {
+            Name : "ตอนที่ 57 => ",
+            mediafire : "https://www.mediafire.com/file/967107fatn7l278/%255BAryMiku%255D_Brawling_Go_-_57_%255BTH%255D.rar/file",
+            gdrive : "",
+            twoth : "https://2th.me/a/anime/f178/3001581"
+        },
+        {
+            Name : "ตอนที่ 56 => ",
+            mediafire : "https://www.mediafire.com/file/5j6vq4011w03fpp/%255BAryMiku%255D_Brawling_Go_-_56_%255BTH%255D.rar/file",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=14248.0"
+        },
+        {
+            Name : "ตอนที่ 55 => ",
+            mediafire : "https://www.mediafire.com/file/oq5q6o41sd8n5sn/%255BAryMiku%255D_Brawling_Go_-_55_%255BTH%255D.rar/file",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=14247.0"
+        },
+        {
+            Name : "ตอนที่ 54 => ",
+            mediafire : "https://www.mediafire.com/file/wixjndacht3hcos/%255BAryMiku%255D_Brawling_Go_-_54_%255BTH%255D.rar/file",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=14246.0"
+        },
+        {
+            Name : "ตอนที่ 53 => ",
+            mediafire : "https://www.mediafire.com/folder/5krj5v7x8y56y/Brawling_Go_-_53_%5BTH%5D?fbclid=IwAR33JCqNmyOuB3DVApeXJmxITj7gOOSyy0E4HLVG7NG4KQU7hA5X6FD2Wms",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=14245.0"
+        },
+        {
+            Name : "ตอนที่ 52 => ",
+            mediafire : "https://www.mediafire.com/folder/5krj5v7x8y56y/Brawling_Go_-_53_%5BTH%5D?fbclid=IwAR33JCqNmyOuB3DVApeXJmxITj7gOOSyy0E4HLVG7NG4KQU7hA5X6FD2Wms",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=13024.0"
+        },
+        {
+            Name : "ตอนที่ 51 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11677.0"
+        },
+        {
+            Name : "ตอนที่ 50 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11675.0"
+        },
+        {
+            Name : "ตอนที่ 49 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11674.0"
+        },
+        {
+            Name : "ตอนที่ 48 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11673.0"
+        },
+        {
+            Name : "ตอนที่ 47 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11672.0"
+        },
+        {
+            Name : "ตอนที่ 46 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11671.0"
+        },
+        {
+            Name : "ตอนที่ 45 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11670.0"
+        },
+        {
+            Name : "ตอนที่ 44 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11669.0"
+        },
+        {
+            Name : "ตอนที่ 43 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11668.0"
+        },
+        {
+            Name : "ตอนที่ 42 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11667.0"
+        },
+        {
+            Name : "ตอนที่ 41 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11666.0"
+        },
+        {
+            Name : "ตอนที่ 40 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11665.0"
+        },
+        {
+            Name : "ตอนที่ 39 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11664.0"
+        },
+        {
+            Name : "ตอนที่ 38 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=11663.0"
+        },
+        {
+            Name : "ตอนที่ 37 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10914.0"
+        },
+        {
+            Name : "ตอนที่ 36 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10913.0"
+        },
+        {
+            Name : "ตอนที่ 35 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10912.0"
+        },
+        {
+            Name : "ตอนที่ 34 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10911.0"
+        },
+        {
+            Name : "ตอนที่ 33 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10910.0"
+        },
+        {
+            Name : "ตอนที่ 32 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10909.0"
+        },
+        {
+            Name : "ตอนที่ 31 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10908.0"
+        },
+        {
+            Name : "ตอนที่ 30 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10907.0"
+        },
+        {
+            Name : "ตอนที่ 29 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10906.0"
+        },
+        {
+            Name : "ตอนที่ 28 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10905.0"
+        },
+        {
+            Name : "ตอนที่ 27 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10904.0"
+        },
+        {
+            Name : "ตอนที่ 26 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10903.0"
+        },
+        {
+            Name : "ตอนที่ 25 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10902.0"
+        },
+        {
+            Name : "ตอนที่ 24 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10901.0"
+        },
+        {
+            Name : "ตอนที่ 23 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10900.0"
+        },
+        {
+            Name : "ตอนที่ 22 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10899.0"
+        },
+        {
+            Name : "ตอนที่ 21 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10898.0"
+        },
+        {
+            Name : "ตอนที่ 20 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10897.0"
+        },
+        {
+            Name : "ตอนที่ 19 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10896.0"
+        },
+        {
+            Name : "ตอนที่ 18 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10895.0"
+        },
+        {
+            Name : "ตอนที่ 17 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10894.0"
+        },
+        {
+            Name : "ตอนที่ 16 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10893.0"
+        },
+        {
+            Name : "ตอนที่ 15 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10892.0"
+        },
+        {
+            Name : "ตอนที่ 14 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10891.0"
+        },
+        {
+            Name : "ตอนที่ 13 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10890.0"
+        },
+        {
+            Name : "ตอนที่ 12 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10889.0"
+        },
+        {
+            Name : "ตอนที่ 11 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10888.0"
+        },
+        {
+            Name : "ตอนที่ 10 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10887.0"
+        },
+        {
+            Name : "ตอนที่ 9 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10886.0"
+        },
+        {
+            Name : "ตอนที่ 8 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10885.0"
+        },
+        {
+            Name : "ตอนที่ 7 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10884.0"
+        },
+        {
+            Name : "ตอนที่ 6 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10883.0"
+        },
+        {
+            Name : "ตอนที่ 5 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10882.0"
+        },
+        {
+            Name : "ตอนที่ 4 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10881.0"
+        },
+        {
+            Name : "ตอนที่ 3 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10880.0"
+        },
+        {
+            Name : "ตอนที่ 2 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10879.0"
+        },
+        {
+            Name : "ตอนที่ 1 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10878.0"
+        },
+        {
+            Name : "ตอนที่ 0 => ",
+            mediafire : "",
+            gdrive : "",
+            twoth : "https://hentaithai.com/forum/index.php?topic=10877.0"
+        }
     ];
     $scope.threeP = [
         {
