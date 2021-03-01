@@ -1,5 +1,6 @@
 var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope,singletonService) {
+//app.controller('myCtrl', function($scope,singletonService) {
+app.controller('myCtrl', function($scope) {
     $scope.brawlings = [
         {
             Name : "ตอนที่ 153 => ",
@@ -1524,7 +1525,7 @@ app.controller('myCtrl', function($scope,singletonService) {
 
     $scope.aa = "https://www.google.com"
 
-    $scope.jj = singletonService.getText();
+    // $scope.jj = singletonService.getText();
 
 
 });
