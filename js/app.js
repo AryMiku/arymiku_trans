@@ -1657,6 +1657,15 @@ app.controller('secretCtrl',function($scope,$http,$q){
         else if(Type == 'Manga JP'){
             classselect = 'badge badge-mangajp'
         }
+        else if(Type == 'Series'){
+            classselect = 'badge badge-series'
+        }
+        else if(Type == 'Manhwa TH'){
+            classselect = 'badge badge-manhwa'
+        }
+        else if(Type == 'Anime TH'){
+            classselect = 'badge badge-animethaisound'
+        }
         return classselect
     }
 
@@ -1677,6 +1686,9 @@ app.controller('secretCtrl',function($scope,$http,$q){
                 break;
             case "Love" :
                 classselect = 'badge badge-love'
+                break;
+            case "18+" :
+                classselect = 'badge badge-18'
                 break;
             default :
                 classselect = 'badge badge-none'
