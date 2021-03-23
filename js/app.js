@@ -1534,14 +1534,15 @@ app.controller('myCtrl', function($scope) {
 
 app.controller('secretCtrl',function($scope,$http,$q){
 
-    $scope.first = false;
     var dataAll = []; 
-    $scope.confirmed = true;
-    $scope.confirmed2 = true;
-    $scope.confirmed3 = true;
-    $scope.confirmed4 = true;
-    $scope.confirmed5 = true;
-    $scope.confirmed6 = true;
+    $scope.Check = {
+        confirmed : true,
+        confirmed2 : true,
+        confirmed3 : true,
+        confirmed4 : true,
+        confirmed5 : true,
+        confirmed6 : true,
+    }
       
     $scope.edragon = async function(){
         Swal.fire({
@@ -1734,22 +1735,22 @@ app.controller('secretCtrl',function($scope,$http,$q){
         $scope.newval = [];
         $scope.data = dataAll
         $scope.data.forEach(function(a,index){
-            if($scope.confirmed && a.Type == 'Anime SubThai'){
+            if($scope.Check.confirmed && a.Type == 'Anime SubThai'){
                 $scope.newval.push(a);
             }
-            else if($scope.confirmed2 && a.Type == 'Manga TH'){
+            else if($scope.Check.confirmed2 && a.Type == 'Manga TH'){
                 $scope.newval.push(a);
             }
-            else if($scope.confirmed3 && a.Type == 'Anime Thai'){
+            else if($scope.Check.confirmed3 && a.Type == 'Anime Thai'){
                 $scope.newval.push(a);
             }
-            else if($scope.confirmed4 && a.Type == 'Manga JP'){
+            else if($scope.Check.confirmed4 && a.Type == 'Manga JP'){
                 $scope.newval.push(a);
             }
-            else if($scope.confirmed5 && a.Type == 'Manhwa TH'){
+            else if($scope.Check.confirmed5 && a.Type == 'Manhwa TH'){
                 $scope.newval.push(a);
             }
-            else if($scope.confirmed6 && a.Type == 'Series'){
+            else if($scope.Check.confirmed6 && a.Type == 'Series'){
                 $scope.newval.push(a);
             }
         });
