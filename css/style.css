@@ -6,3 +6,7 @@
 .badge-18 { background-color: #FCA401; color:black;}
 .bank-center { text-align:center; }
 .bank-fonthead {font-family: 'Kanit', sans-serif;}
+.swal2-title {
+    font-family: 'Kanit', sans-serif;
+    /* font-style: italic; */
+  }

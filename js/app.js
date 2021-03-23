@@ -1534,6 +1534,14 @@ app.controller('myCtrl', function($scope) {
 
 app.controller('secretCtrl',function($scope,$http,$q){
 
+    $scope.first = false;
+    var dataAll = []; 
+    $scope.confirmed = true;
+    $scope.confirmed2 = true;
+    $scope.confirmed3 = true;
+    $scope.confirmed4 = true;
+    $scope.confirmed5 = true;
+    $scope.confirmed6 = true;
       
     $scope.edragon = async function(){
         Swal.fire({
@@ -1545,6 +1553,7 @@ app.controller('secretCtrl',function($scope,$http,$q){
         $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json").then(function(res,status,xhr) {
             /*เอา Data ดึงไปใช้ตรงๆที่หน้าเมนูเลย*/
             $scope.data = res.data;
+            dataAll = res.data;
             /*เอาไว้นับว่าควรทำ Pagination*/
             let pages = parseInt($scope.data.length / 8) + 1; //หน้าหนึ่งไม่เกิน 8 เรื่อง
             $scope.page = [];
@@ -1555,6 +1564,8 @@ app.controller('secretCtrl',function($scope,$http,$q){
             swal.close();
         });
     }
+
+
 
     $scope.seepicture = (Id) => {
         var picture_path = doesFileExist('/pic/secret/'+Id+'.jpg');
@@ -1620,6 +1631,9 @@ app.controller('secretCtrl',function($scope,$http,$q){
         var url = new URL(window.location.href);
         var c = url.searchParams.get("id");
         $scope.idDowload = c;
+        if($scope.idDowload == ""){
+            window.location.href = "index.html"
+        }
         var dowloadlink = "https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/" + c + ".json"
         $http.get(dowloadlink).then(function(res) {
             $scope.data = res.data;
@@ -1629,6 +1643,17 @@ app.controller('secretCtrl',function($scope,$http,$q){
             // });
             //console.log($scope.dataOnPage);
             $scope.dataOnPage = $scope.data;
+        })
+        .catch(function(){
+            Swal.fire({
+                title: 'หน้านี้ไม่มีข้อมูลกำลังกลับหน้าหลัก',
+                showConfirmButton: false,
+                allowOutsideClick: false,
+                timer: 2000,
+            }).then(function(){
+                window.location.href = "index.html"
+            });
+            swal.showLoading();
         });
         // let data = await GetData();
         // $scope.data = data.data;
@@ -1705,8 +1730,48 @@ app.controller('secretCtrl',function($scope,$http,$q){
 
     }
 
-
-
+    $scope.change = function(){
+        $scope.newval = [];
+        $scope.data = dataAll
+        $scope.data.forEach(function(a,index){
+            if($scope.confirmed && a.Type == 'Anime SubThai'){
+                $scope.newval.push(a);
+            }
+            else if($scope.confirmed2 && a.Type == 'Manga TH'){
+                $scope.newval.push(a);
+            }
+            else if($scope.confirmed3 && a.Type == 'Anime Thai'){
+                $scope.newval.push(a);
+            }
+            else if($scope.confirmed4 && a.Type == 'Manga JP'){
+                $scope.newval.push(a);
+            }
+            else if($scope.confirmed5 && a.Type == 'Manhwa TH'){
+                $scope.newval.push(a);
+            }
+            else if($scope.confirmed6 && a.Type == 'Series'){
+                $scope.newval.push(a);
+            }
+        });
+        // if(!$scope.confirmed && !$scope.confirmed2 && !$scope.confirmed3){
+        //     $scope.data = dataAll;
+        // }
+        //else{
+            $scope.data = $scope.newval;
+        //}
+        // if(!$scope.confirmed && !$scope.confirmed2){
+        //     $scope.data = dataAll
+        // }
+        // if($scope.confirmed && filter == 1){
+        //     $scope.data = $scope.data.filter(word => word.Type == 'Anime SubThai')
+        // }
+        // else if($scope.confirmed2 && filter == 2){
+        //     $scope.data = $scope.data.filter(word => word.Type == 'Manga TH')
+        // }
+        // else{
+        //     $scope.data = dataAll
+        // }
+    }
 })
 
 app.directive('myPostRepeatDirective', function() {
