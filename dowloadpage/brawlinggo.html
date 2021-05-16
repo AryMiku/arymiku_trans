@@ -12,6 +12,8 @@
   <title>AryMiku - Brawling Go</title>
   <link rel="icon" href="/icon/favicon.jpg" type="image/x-icon"> 
   <link rel="shortcut icon" href="/icon/favicon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 
   <!-- Bootstrap core CSS -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +29,11 @@
 
     gtag('config', 'UA-154954948-1');
   </script>
+  <style>
+    .card{margin-bottom: 15px; border-radius:0; box-shadow: 0 3px 5px rgba(0,0,0,.1); }
+    .pointer {cursor: pointer;}
+    .button-margin {margin-top: 5px;margin-left: 5px;}
+  </style>
 </head>
 
 <body>
@@ -67,22 +74,56 @@
       <img src="/pic/Brawling.jpg" alt="" width="500" height="700" class="img-fluid">
     </div>
     <div>
-      มังงะ แปลไทย <br>
-      ตอนที่ 110 อันนี้ผมหาทางเพจตัวเองไม่เจอ เดี๋ยวลองไปตามหาตามในเครื่องก่อนนะครับ <br>
-      อัพครบหมดแล้วนะครับ ช่วงแรกๆผมไม่ได้เป็นคนแปล แต่เป็น Blazer นะครับ ซึ่งเอามาจาก Hentaithai นะครับ<br>
-      <span style="color: red;">ถ้ากดลิงค์แล้วเด้งไปหน้าเดิมแสดงว่าไม่มีให้โหลดในหมวดนั้นนะครับ (ไว้ว่างๆจะมาไล่แก้ให้ดูง่ายๆ)</span>
+      <br> Manhwa 18+ แปลไทย <br>
+      ช่วงแรกๆผมไม่ได้เป็นคนแปล แต่เป็น Blazer นะครับ ซึ่งเอามาจาก Hentaithai นะครับ<br>
     </div><br>
-            <div>ดาวโหลดได้ตามปุ่มข้างล่างนี้</div><br>
             <div class="alert alert-primary" role="alert">
-                ลิงค์สำหรับการดาวโหลด
+              <div class="row">
+                <div class="col-6">
+                  ลิงค์สำหรับการดาวโหลด
+                </div>
+                <div class="col-6 text-right">
+                  <span ng-click="test(1)" class="pointer"><i class="fas fa-list"></i></span> /  
+                  <span ng-click="test(2)" class="pointer"><i class="fas fa-grip-horizontal"></i></span>
+                </div>
+              </div>
             </div>
-            <div ng-repeat="brawling in brawlings">
-              {{brawling.Name}}
-              <a target="_blank" class="btn btn-outline-primary" href="{{brawling.mediafire}}">Mediafire</a>
-                <a target="_blank" class="btn btn-outline-primary" href="{{brawling.twoth}}">2.th</a>
-                <a target="_blank" class="btn btn-outline-primary" href="{{brawling.gdrive}}">Google Drive</a><br><br>
+
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search" ng-model="Search">
+              <div class="input-group-append">
+                <span class="input-group-text" id=""><i class="fas fa-search"></i></span>
+              </div>
             </div>
-            <br>
+
+            <div ng-repeat="brawling in brawlings | filter:Search" ng-if="view.list">
+              <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">{{brawling.Name}}</h5>
+                    <p class="card-text">
+                      <a target="_blank" ng-repeat="a in brawling.Dowload" class="btn btn-outline-primary btn-sm button-margin" href="{{a.Link}}">{{a.Name}}</a>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3" ng-repeat="brawling in brawlings | filter:Search" ng-if="view.grid">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">{{brawling.Name}}</h5>
+                    <p class="card-text">
+                      <a target="_blank" ng-repeat="a in brawling.Dowload" class="btn btn-outline-primary btn-sm button-margin" href="{{a.Link}}">{{a.Name}}</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="alert alert-danger" role="alert">
                 ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
             </div> 
