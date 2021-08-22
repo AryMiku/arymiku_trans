@@ -1278,12 +1278,6 @@ app.controller('myCtrl', function($scope) {
             ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
         },
         {
-            Name : "ตอนที่ 129 => ",
-            mp4 : "https://drive.google.com/open?id=1zfzWgfzlx9D3MWMhGdHfQhdr216hlBEK",
-            mkv : "https://drive.google.com/open?id=1FwSJ77DNEc3WiWNm1ivfoeNWJXb4WDEn",
-            ass : "https://github.com/AryMiku/ARC_V_SUB/tree/master/YU-GI-OH%20ARC-V"
-        },
-        {
             Name : "ตอนที่ 137 => ",
             mp4 : "https://drive.google.com/open?id=1vH5mMhgiGoSHEZLB6wcpgNjbrQye7VJt",
             mkv : "https://drive.google.com/open?id=1ecZJ3rdK1zOZQ-xRe25ILNSepS1SRGDL",
