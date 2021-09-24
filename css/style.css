@@ -10,3 +10,25 @@
     font-family: 'Kanit', sans-serif;
     /* font-style: italic; */
   }
+.complete{
+  color: green;
+}
+.incoming{
+  color: red;
+}
+
+.tag-Anime{
+  color: #23FFD4;
+}
+
+.tag-Manga{
+  color: #4679FF;
+}
+
+.tag-LiveAction{
+  color: #EFF210;
+}
+
+.tag-Manhua{
+  color: #F210D3;
+}

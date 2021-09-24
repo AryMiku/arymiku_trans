@@ -1716,6 +1716,224 @@ app.controller('myCtrl', function($scope) {
         }
     }
 
+    $scope.Titles = [
+        {
+            Name : "Fate/stay night : Heaven's Feel",
+            Suscess : true,
+            DowloadPage : "heavenfeel.html",
+            img : "feel.jpg",
+            Category : "Anime",
+            Type : "The Movie / Blu-Ray",
+            Episode : "3/3"
+        },
+        {
+            Name : "Hitman (Kouji Seo)",
+            Suscess : false,
+            DowloadPage : "hitman.html",
+            img : "Hitman.jpg",
+            Category : "Manga",
+            Type : "Series / PDF",
+            Episode : 18
+        },
+        {
+            Name : "Brawling Go",
+            Suscess : true,
+            DowloadPage : "brawlinggo.html",
+            img : "Brawling.jpg",
+            Category : "Manhua",
+            Type : "Series",
+            Episode : 153
+        },
+        {
+            Name : "The Secret 3P",
+            Suscess : true,
+            DowloadPage : "3P.html",
+            img : "3Pcover.jpg",
+            Category : "Manhua",
+            Type : "Series",
+            Episode : 18
+        },
+        {
+            Name : "YU-GI-OH ARC-V",
+            Suscess : true,
+            DowloadPage : "yugioharcv.html",
+            img : "yugiarcv.jpg",
+            Category : "Anime",
+            Type : "Series",
+            Episode : 147
+        },
+        {
+            Name : "Ijiranaide, Nagatoro-san",
+            Suscess : false,
+            DowloadPage : "nagatoro.html",
+            img : "nagatoro.jpg",
+            Category : "Manga",
+            Type : "Series",
+            Episode : 7
+        },
+        {
+            Name : "Kamen Rider Zi-O",
+            Suscess : true,
+            DowloadPage : "zio.html",
+            img : "zi-o.png",
+            Category : "Live Action",
+            Type : "Series",
+            Episode : 49
+        },
+        {
+            Name : "Hidden No Aria",
+            Suscess : false,
+            DowloadPage : "aria.html",
+            img : "Aria.jpg",
+            Category : "Manga",
+            Type : "Series",
+            Episode : 8
+        },
+        {
+            Name : "Fate/Grand Order: Zettai Maju Sensen Babylonia",
+            Suscess : true,
+            DowloadPage : "fate_babi.html",
+            img : "fate_babi.jpg",
+            Category : "Anime",
+            Type : "OVA",
+            Episode : 1
+        },
+        {
+            Name : "Sword Art Online Alicization",
+            Suscess : true,
+            DowloadPage : "sao.html",
+            img : "sao.jpg",
+            Category : "Anime",
+            Type : "Series",
+            Episode : 24
+        },
+        {
+            Name : "Nozoki Ana",
+            Suscess : true,
+            DowloadPage : "ana.html",
+            img : "ana.jpg",
+            Category : "Anime",
+            Type : "OVA",
+            Episode : 1
+        },
+        {
+            Name : "Azur Lane",
+            Suscess : false,
+            DowloadPage : "azurlane.html",
+            img : "AzurLane_banner.jpg",
+            Category : "Anime",
+            Type : "Series",
+            Episode : 4
+        },
+        {
+            Name : "Kyochuu_Rettou",
+            Suscess : true,
+            DowloadPage : "kyochuu_rettou.html",
+            img : "Kyochuu_Rettou.jpg",
+            Category : "Anime",
+            Type : "The Movie",
+            Episode : 1
+        },
+        {
+            Name : "Shadowverse",
+            Suscess : false,
+            DowloadPage : "shadowverse.html",
+            img : "shadowverse_banner.jpg",
+            Category : "Anime",
+            Type : "Series",
+            Episode : 1
+        },
+        {
+            Name : "Kandagawa Jet Girls",
+            Suscess : true,
+            DowloadPage : "kandagawa.html",
+            img : "kandagawa_banner.jpg",
+            Category : "Anime",
+            Type : "Series",
+            Episode : 12
+        },
+        {
+            Name : "Hada Camera",
+            Suscess : false,
+            DowloadPage : "hadacamera.html",
+            img : "Hada_cover.jpg",
+            Category : "Manga",
+            Type : "Series",
+            Episode : 49
+        },
+        {
+            Name : "High School Of The Dead (Full Color)",
+            Suscess : false,
+            DowloadPage : "htod.html",
+            img : "highschoolofthedead.jpg",
+            Category : "Manga",
+            Type : "Series",
+            Episode : 04
+        },
+        {
+            Name : "Nagatoro ComicAnthology (Manga)",
+            Suscess : false,
+            DowloadPage : "nagatoro_comicanthology.html",
+            img : "naga.jpg",
+            Category : "Manga",
+            Type : "One Shot",
+            Episode : 03
+        },
+        {
+            Name : "Fuuka สายลมรักฤดูร้อน",
+            Suscess : true,
+            DowloadPage : "fuuka_anime.html",
+            img : "fuuka.jpg",
+            Category : "Anime",
+            Type : "Series / Blu-Ray",
+            Episode : 12
+        },
+        {
+            Name : "Dogeza de Tanondemita",
+            Suscess : true,
+            DowloadPage : "Dogeza.html",
+            img : "Dogeza.jpg",
+            Category : "Anime",
+            Type : "Series / Blu-Ray",
+            Episode : 13
+        }
+    ]
+
+    $scope.showPicture = function(img){
+        $('.imagepreview').attr('src', 'pic/'+img);
+        $('#imagemodal').modal('show');
+    }
+
+    $scope.Run = function (){
+        // Swal.fire({
+        //     title: 'กำลังโหลดจ้า...',
+        //     showConfirmButton: false,
+        //     allowOutsideClick: false,
+        // });
+        // swal.showLoading();
+    }
+
+    $scope.tagColor = function (Category){
+        let classselect = '';
+        switch(Category){
+            case "Anime" :
+                classselect = 'tag-Anime'
+                break;
+            case "Manga" :
+                classselect = 'tag-Manga'
+                break;
+            case "Live Action" :
+                classselect = 'tag-LiveAction'
+                break;
+            case "Manhua" :
+                classselect = 'tag-Manhua'
+                break;
+        }
+        return classselect;
+    }
+
+
+
 
 });
 
@@ -1742,15 +1960,37 @@ app.controller('secretCtrl',function($scope,$http,$q){
         swal.showLoading();
         $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json").then(function(res,status,xhr) {
             /*เอา Data ดึงไปใช้ตรงๆที่หน้าเมนูเลย*/
-            $scope.data = res.data;
+            $scope.Titles = res.data;
             dataAll = res.data;
             /*เอาไว้นับว่าควรทำ Pagination*/
-            let pages = parseInt($scope.data.length / 8) + 1; //หน้าหนึ่งไม่เกิน 8 เรื่อง
-            $scope.page = [];
-            for(let i = 0; i < pages; i++){
-                $scope.page.push(i+1);
-            }
-            console.log($scope.page);
+            //let pages = parseInt($scope.data.length / 8) + 1; //หน้าหนึ่งไม่เกิน 8 เรื่อง
+            // $scope.page = [];
+            // for(let i = 0; i < pages; i++){
+            //     $scope.page.push(i+1);
+            // }
+            // console.log($scope.page);
+            swal.close();
+        });
+    }
+
+    $scope.Run = function(){
+        Swal.fire({
+            title: 'กำลังโหลดจ้า...',
+            showConfirmButton: false,
+            allowOutsideClick: false,
+        });
+        swal.showLoading();
+        $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json").then(function(res,status,xhr) {
+            /*เอา Data ดึงไปใช้ตรงๆที่หน้าเมนูเลย*/
+            $scope.Titles = res.data;
+            // dataAll = res.data;
+            // /*เอาไว้นับว่าควรทำ Pagination*/
+            // let pages = parseInt($scope.data.length / 8) + 1; //หน้าหนึ่งไม่เกิน 8 เรื่อง
+            // $scope.page = [];
+            // for(let i = 0; i < pages; i++){
+            //     $scope.page.push(i+1);
+            // }
+            // console.log($scope.page);
             swal.close();
         });
     }
