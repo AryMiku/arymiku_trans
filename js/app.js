@@ -1408,149 +1408,77 @@ app.controller('myCtrl', function($scope) {
 
     $scope.sao_aliz = [
         {
-            Name : "ตอนที่ 1 => ",
-            MP4 : "https://drive.google.com/file/d/1RkxgyGDqtAPgFE4xsYV78lEsD7jRX6Zn/view",
-            MKV : "https://drive.google.com/file/d/1YNWGJfVW1oghTJmML0CUQV9I-59YeUrT/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 01 - Alicization"
         },
         {
-            Name : "ตอนที่ 2 => ",
-            MP4 : "https://drive.google.com/file/d/1VO0rL5K1DhnMphlgCUIGLhp66zvLojsN/view",
-            MKV : "https://drive.google.com/file/d/14faV7JCdtF1qmraRcPhvWDEC6Kwv85xD/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 02 - ต้นไม้ปีศาจ"
         },
         {
-            Name : "ตอนที่ 3 => ",
-            MP4 : "https://drive.google.com/file/d/1lOpxhusie_iVEiXY3yoQU50Qhw-QQ3Kr/view",
-            MKV : "https://drive.google.com/file/d/1PWAOdidtIGmaOpQ3iU6bayFfGs_qjnoO/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 03 - เทือกเขาสุดขอบ"
         },
         {
-            Name : "ตอนที่ 4 => ",
-            MP4 : "https://drive.google.com/file/d/1blbJyHBfOlQM3EuRK27MCPNDFQUIgfen/view",
-            MKV : "https://drive.google.com/file/d/1Gn3V-FBuz84pYfmdAJK6fLLy4A7myWVh/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 04 - ออกเดินทาง"
         },
         {
-            Name : "ตอนที่ 5 => ",
-            MP4 : "https://drive.google.com/file/d/1NL_cEbTH_eEhdEq4HrJjeWPL1uqx7Mhx/view",
-            MKV : "https://drive.google.com/file/d/15cG3a4Hi_Y7AFrBVkqOeZVA4fMFluqAY/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 05 - โอเซียนเทอเทิล"
         },
         {
-            Name : "ตอนที่ 6 => ",
-            MP4 : "https://drive.google.com/file/d/1APPTieuvkimAgdi13T-8NDtMV99yQydr/view",
-            MKV : "https://drive.google.com/file/d/1gdDcvie5u-QQxCUZ0X2K8FYHj03ozBUJ/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 06 - โปรเจค Alicization"
         },
         {
-            Name : "ตอนที่ 7 => ",
-            MP4 : "https://drive.google.com/file/d/1AoUUCoCYG9eYIcjy7wkXVvw_a8miV8Gu/view",
-            MKV : "https://drive.google.com/file/d/1O94bMBIIlrSzZ3NDrqSUljSFsvb5Kkvh/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 07 - โรงเรียนสอนวิชาดาบ"
         },
         {
-            Name : "ตอนที่ 8 => ",
-            MP4 : "https://drive.google.com/file/d/1rqbQ6mhWiSmK8pM4g7b__qfWqbCZ7z40/view",
-            MKV : "https://drive.google.com/file/d/1TfesR_ApxdqMKe9rY9cubd7vztnSmh77/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 08 - เกียรติยศแห่งนักดาบ"
         },
         {
-            Name : "ตอนที่ 9 => ",
-            MP4 : "https://drive.google.com/file/d/14csKfzmbl5mhwKaNaWBJd2ZoWP57VMld/view",
-            MKV : "https://drive.google.com/file/d/11QwAd6876zo5hvRjwesQSZFJzF3rMyBQ/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 09 - หน้าที่ของขุนนาง"
         },
         {
-            Name : "ตอนที่ 10 => ",
-            MP4 : "https://drive.google.com/file/d/1AWlZema0_Do_FAFUF6XDEsNuVFMVS1im/view",
-            MKV : "https://drive.google.com/file/d/1uarLAcxEo65GyOTVeSk959EdDS8I9tac/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 10 - รายการต้องห้าม"
         },
         {
-            Name : "ตอนที่ 11 => ",
-            MP4 : "https://drive.google.com/file/d/15A0OgD88eiS80oNGfDYXg5A1NdiT3wQ6/view",
-            MKV : "https://drive.google.com/file/d/1Ys119WaZeAid7ThaOT495mHdTdle1ThB/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 11 - เซ็นทรัลคาธีดรัล"
         },
         {
-            Name : "ตอนที่ 12 => ",
-            MP4 : "https://drive.google.com/file/d/1OwB23f0-bmhyQWw2SspxHeRu3cb1qrka/view",
-            MKV : "https://drive.google.com/file/d/1He2eqeee-dz7VPrmHxjUvK9Mn6YjaqA9/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 12 - นักปราชญ์แห่งหอสมุด"
         },
         {
-            Name : "ตอนที่ 13 => ",
-            MP4 : "https://drive.google.com/file/d/1bushk0xKLwpKJtL90POXyrZuT_I2aRgn/view",
-            MKV : "https://drive.google.com/file/d/1Yy3-DneoSG9dar0XRnLlEMrjM51SIoMy/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 13 - ผู้ปกครองและผู้เป็นสื่อกลาง"
         },
         {
-            Name : "ตอนที่ 14 => ",
-            MP4 : "https://drive.google.com/file/d/1L2atP6UC0sI_43fxpn29i54TjOKXcCiH/view",
-            MKV : "https://drive.google.com/file/d/1uHJu9lCiK5FJTg-Lv-56wBS5vuYsVgJv/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 14 - อัศวินสีเพลิง"
         },
         {
-            Name : "ตอนที่ 15 => ",
-            MP4 : "https://drive.google.com/file/d/18UoXdenmOWKCgi_kQ8HXOBm8Rd6mRZDr/view",
-            MKV : "https://drive.google.com/file/d/17jyTXSrKUerfNKs1z7wgTraIzwssZhaN/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 15 - อัศวินแห่งแสงตะวัน"
         },
         {
-            Name : "ตอนที่ 16 => ",
-            MP4 : "https://drive.google.com/file/d/1Q8XGU1hqe0OiMgBBGLjAm9wgvFbNlysQ/view",
-            MKV : "https://drive.google.com/file/d/1jXJ57SJm-b0xj4zHGPg8BA7IZ4BiAplz/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 16 - อัศวินหอมหมื่นลี้"
         },
         {
-            Name : "ตอนที่ 17 => ",
-            MP4 : "https://drive.google.com/file/d/1-eyW6wRY0jam3rcdgPzhdO4U3vROMfY_/view",
-            MKV : "https://drive.google.com/file/d/12Tn-wXtzcJlY6jYLvKe8Aq0pGagDXnWD/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 17 - สัญญาสงบศึก"
         },
         {
-            Name : "ตอนที่ 18 => ",
-            MP4 : "https://drive.google.com/file/d/1C9z-zTcyJCWoWf5MhFsnCe9jP7yQ6NS7/view",
-            MKV : "https://drive.google.com/file/d/1-4GvdXmPdlVhlrcJSthwpbiNOyUkfouI/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 18 - วีรบุรุษในตำนาน"
         },
         {
-            Name : "ตอนที่ 19 => ",
-            MP4 : "https://drive.google.com/file/d/1LnedrXk6soTcNczVj21ExMrB-M8UJ97g/view",
-            MKV : "https://drive.google.com/file/d/1OlXndJhW20dw4NqfERewhf0c4tUR2-BF/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 19 - ผนึกในตาขวา"
         },
         {
-            Name : "ตอนที่ 20 => ",
-            MP4 : "https://drive.google.com/file/d/1SjdoqGGUs9vazMiPPaQ9aKjvj4z6vgmB/view",
-            MKV : "https://drive.google.com/file/d/1NDqM0Q_AYcaG_QVrbHsdQgMKPDnAASrn/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 20 - ซินเธไซส์"
         },
         {
-            Name : "ตอนที่ 21 => ",
-            MP4 : "https://drive.google.com/file/d/1PlIwK69xbUJRHuovtgB1SZYyhP0IORzN/view",
-            MKV : "https://drive.google.com/file/d/1Ute13xmWVNSwosOtbo-L-FgkQWEPUmhH/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 21 - อัศวินหมายเลข 32"
         },
         {
-            Name : "ตอนที่ 22 => ",
-            MP4 : "https://drive.google.com/file/d/17jVhZlyqbD9edWlwGw9O5eK8gRwsjZKb/view",
-            MKV : "https://drive.google.com/file/d/1KMFXMVGX5SqJhvZdyCQ409ocezomPEXa/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 22 - มนุษย์ดาบยักษ์"
         },
         {
-            Name : "ตอนที่ 23 => ",
-            MP4 : "https://drive.google.com/file/d/1FvnIK9dIBlbcrUguXQDTM5HN_f5IQdax/view",
-            MKV : "https://drive.google.com/file/d/1TJs4jmbV072kiGcbNsSriGTu_CC-QipR/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
+            Name : "ตอนที่ 23 - แอนมินิสเตรเตอร์"
         },
         {
-            Name : "ตอนที่ 24 [ตอนจบ] => ",
-            MP4 : "https://drive.google.com/file/d/1WiM-yOTlzaUSSpc6vlqTgwkRvjbFx6KC/view",
-            MKV : "https://drive.google.com/file/d/1jeXqwThoZjzRh8je7sLyKiJDKm8aFo-q/view",
-            ASS : "https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization",
-        },
+            Name : "ตอนที่ 24 - อัศวินของผม [ตอนจบ]"
+        }
     ]
 
     $scope.AzurLane = [

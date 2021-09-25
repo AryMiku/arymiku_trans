@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>AryMiku - SAO Alicization</title>
+  <title>AryMiku - Sword Art Online Alicization</title>
   <link rel="icon" href="/icon/favicon.jpg" type="image/x-icon"> 
   <link rel="shortcut icon" href="/icon/favicon.jpg" type="image/x-icon">
 
@@ -18,6 +18,11 @@
 
   <!-- Custom styles for this template -->
   <link href="/css/heroic-features.css" rel="stylsheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154954948-1"></script>
   <script>
@@ -63,23 +68,61 @@
   <!-- Page Content -->
   <br><br><br><br>
   <div class="container" ng-app="myApp" ng-controller="myCtrl">
-    <div class="text-center">
-      <div><h1>Sword Art Online Alicization</h1></div><br>
-      <img src="/pic/sao_page.jpg" alt="" class="img-fluid" width="429" height="600">
+    <div class="container" style="margin-bottom: 10px;">
+      <div class="row">
+        <div class="col-sm">
+          <center><img src="/pic/sao_page.jpg" style="width: 100%; max-width: 350px;" ></center>
+        </div>
+        <div class="col-sm sarabun-font">
+          <b>ชื่อเรื่อง</b> : Sword Art Online Alicization <hr>
+          <b>รูปแบบ</b> : [TH][BD][1080P] <hr> 
+          <b>จำนวนตอน</b> : 24 ตอน <hr> 
+          <b>เนื้อเรื่องย่อ</b> : สิงหาคม 2026 คิริโตะ รับงานเป็นผู้ทดสอบระบบ FullDive รุ่นที่ 4 Soul Translator 
+          ซึ่งทำให้เขาไปอยู่ในโลกเสมือน Underworld ที่เวลาเดินเร็วกว่าโลกความเป็นจริง 1,000 เท่า เขาได้ใช้ชีวิตในนั้นตั้งแต่เด็ก 
+          จนใช้เวลาร่วม 11 ปี แต่ความทรงจำเหตุการณ์ต่างๆ กลับถูกผนึกไว้หลังกลับสู่โลกเดิม 
+          จนวันหนึ่ง คิริโตะบาดเจ็บสาหัสจาก Johnny Black (อดีตสมาชิกของ Death Gun ที่รอดอยู่) ต่อหน้าอาสึนะ 
+          ผลจากยาฉีดเข้าร่าง ทำให้เขาหยุดหายใจ แม้จะช่วยทำให้หัวใจเต้นอีกครั้ง แต่เกิดความเสียหายทางสมองจากขาดอ๊อกซิเจนเป็นเวลานาน 
+          คิริโตะอยู่ในอาการโคม่าไม่ได้สติ มีกลุ่มคนที่ใช้อุปกรณ์ Soul Translators พาเขาไปรักษา ซึ่งทำให้เขาได้ความทรงจำเดิมในโลก 
+          Underworld กลับไปผจญภัยในโลกนั้น จนกว่าจะมีหนทางพาเขากลับมาโลกเดิมได้ <hr> 
+          <b> แนวเรื่อง </b> :  แอ็กชั่น , RPG  <hr>
+          <b>สถานะ</b> : <span class="badge badge-success">จบแล้ว</span>
+        </div>
+      </div>
     </div>
-    <div>ทุกตอนจะเป็น BD หมด ผมได้ลองเทียบกับเวอร์ชั่น Netflix แล้วฉากที่ยูจิโอตาระเบิด Netflix ยังดำอยู่ แต่อันนี้เห็นชัดเลยๆ</div><br>
-            <div>ดาวโหลดได้ตามปุ่มข้างล่างนี้</div><br>
-            <div class="alert alert-primary" role="alert">
+    <br><br>
+    <div class="sarabun-font">
+      <div class="incoming">** รหัส Dowload ไฟล์ MKV : v6qv</div>
+      <div class="complete">** รหัส Dowload ไฟล์ MP4 : iq23</div>
+    </div><br>
+            <div class="alert alert-primary sarabun-font" role="alert">
                 ลิงค์สำหรับการดาวโหลด
             </div>
-            <div ng-repeat="brawling in sao_aliz">
-              {{brawling.Name}}
-              <a target="_blank" class="btn btn-outline-primary" href="{{brawling.MP4}}">MP4</a>
-              <a target="_blank" class="btn btn-outline-primary" href="{{brawling.MKV}}">MKV</a>
-              <a target="_blank" class="btn btn-outline-primary" href="{{brawling.ASS}}">ASS File</a><br><br>
-            </div>
+            <table id="example" class="table table-striped table-bordered" style="width:100%">
+              <thead class="sarabun-font">
+                  <tr>
+                      <th>ชื่อตอน</th>
+                      <th>ลิงค์ดาวโหลด</th>
+                      <th>ใส่ซับโดย</th>
+                      <th>สถานะไฟล์</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="Data in sao_aliz" class="bank-fonthead">
+                  <td class="align-middle sarabun-font">{{Data.Name}}</td>
+                  <td class="sarabun-font">
+                    <center>
+                      <a href="https://terabox.com/s/1weyzI_JLqQr1uuCo1IKQnw" target="_blank">MKV</a> / 
+                      <a href="https://terabox.com/s/1BpiThXy1Rbe3W271y_TD6A" target="_blank">MP4</a> /
+                      <a href="https://github.com/AryMiku/ARC_V_SUB/tree/master/Sword%20Art%20Online%20Alicization" target="_blank">ASS</a>
+                    </center>
+                  </td>
+                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
+                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+                </tr>
+              </tbody>
+          </table>
             <br>
-            <div class="alert alert-danger" role="alert">
+            <div class="alert alert-danger sarabun-font" role="alert">
                 ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
             </div> 
   <!-- /.container -->
@@ -87,7 +130,7 @@
     <!-- Footer -->
   <footer class="py-3 bg-dark">
         <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+          <p class="m-0 text-center text-white">Copyright &copy; แปลมั่วๆโดย AryMiku 2021</p>
         </div>
         <!-- /.container -->
       </footer>
@@ -98,6 +141,18 @@
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script src="/js/angular.min.js"></script>
   <script src="/js/app.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#example').DataTable({
+        "columnDefs": [
+          { "width": "60%", "targets": 0 },
+        ]
+      });
+    });
+  </script>
 
 </body>
 
