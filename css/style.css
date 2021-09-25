@@ -6,8 +6,11 @@
 .badge-18 { background-color: #FCA401; color:black;}
 .bank-center { text-align:center; }
 .bank-fonthead {font-family: 'Kanit', sans-serif;}
+.sarabun-font{
+  font-family: 'Sarabun', sans-serif;
+}
 .swal2-title {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Sarabun', sans-serif;
     /* font-style: italic; */
   }
 .complete{
@@ -31,4 +34,20 @@
 
 .tag-Manhua{
   color: #F210D3;
+}
+
+/*Tag Secret Type Categories*/
+.badge-animesubth { background-color: #23FFD4; color:black;}
+.badge-mangath { background-color: #4679FF; color:black;}
+.badge-animethai {background-color: #99ccff;color: black;}
+.badge-mangajp {background-color:#ff6699;color: black;}
+.badge-series {background-color:#FF0000;color: white;}
+.badge-manhwa {background-color:#F210D3;color: white;}
+.badge-animethaisound {background-color:#EFF210;color: black;}
+
+.upper{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
 }

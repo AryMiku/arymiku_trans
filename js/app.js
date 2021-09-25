@@ -1950,28 +1950,25 @@ app.controller('secretCtrl',function($scope,$http,$q){
         confirmed5 : true,
         confirmed6 : true,
     }
+
+    $scope.sortType     = 'Id'; // set the default sort type
+    $scope.sortReverse  = false;  // set the default sort order
+    $scope.searchFish   = '';     // set the default search/filter term
       
-    $scope.edragon = async function(){
-        Swal.fire({
-            title: 'กำลังโหลดจ้า...',
-            showConfirmButton: false,
-            allowOutsideClick: false,
-        });
-        swal.showLoading();
-        $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json").then(function(res,status,xhr) {
-            /*เอา Data ดึงไปใช้ตรงๆที่หน้าเมนูเลย*/
-            $scope.Titles = res.data;
-            dataAll = res.data;
-            /*เอาไว้นับว่าควรทำ Pagination*/
-            //let pages = parseInt($scope.data.length / 8) + 1; //หน้าหนึ่งไม่เกิน 8 เรื่อง
-            // $scope.page = [];
-            // for(let i = 0; i < pages; i++){
-            //     $scope.page.push(i+1);
-            // }
-            // console.log($scope.page);
-            swal.close();
-        });
-    }
+    // $scope.edragon = async function(){
+    //     Swal.fire({
+    //         title: 'กำลังโหลดจ้า...',
+    //         showConfirmButton: false,
+    //         allowOutsideClick: false,
+    //     });
+    //     swal.showLoading();
+    //     $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/API_DowloadAnother.json").then(function(res,status,xhr) {
+    //         /*เอา Data ดึงไปใช้ตรงๆที่หน้าเมนูเลย*/
+    //         $scope.Titles = res.data;
+    //         dataAll = res.data;
+    //         swal.close();
+    //     });
+    // }
 
     $scope.Run = function(){
         Swal.fire({
@@ -2222,7 +2219,7 @@ app.directive('bsTooltip', function(){
         link: function(scope, element, attrs){
             $(element).hover(function(){
                 // on mouseenter
-                scope.ShowPictureHover(scope.a.Id);
+                scope.ShowPictureHover(scope.Data.Id);
             }, function(){
                 // on mouseleave
                 $("#bank2").remove();
