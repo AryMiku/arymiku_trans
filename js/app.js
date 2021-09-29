@@ -1,4 +1,4 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ui.bootstrap']);
 //app.controller('myCtrl', function($scope,singletonService) {
 app.controller('myCtrl', function($scope) {
     $scope.brawlings = [
@@ -1868,6 +1868,7 @@ app.controller('myCtrl', function($scope) {
 /*Table Controller*/ 
 
 app.controller('secretCtrl',function($scope,$http,$q){
+    
 
     var dataAll = []; 
     $scope.Check = {
@@ -1916,11 +1917,25 @@ app.controller('secretCtrl',function($scope,$http,$q){
             //     $scope.page.push(i+1);
             // }
             // console.log($scope.page);
+            $scope.filteredTodos = []
+            $scope.totalItems = 64;
+            $scope.currentPage = 1;
+            $scope.maxSize = 5;
+            $scope.bigTotalItems = $scope.Titles.length;
+            $scope.bigCurrentPage = 1;
+            $scope.numPerPage = 10;
             swal.close();
         });
     }
 
-
+    $scope.$watch('bigCurrentPage', function() {
+        if($scope.bigCurrentPage != undefined){
+            var begin = (($scope.bigCurrentPage - 1) * $scope.numPerPage)
+            , end = begin + $scope.numPerPage;
+            
+            $scope.filteredTodos = $scope.Titles.slice(begin, end);
+        }
+      });
 
     $scope.seepicture = (Id) => {
         var picture_path = doesFileExist('/pic/secret/'+Id+'.jpg');
