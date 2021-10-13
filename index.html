@@ -1,381 +1,103 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>AryMiku - Translate</title>
-  <link rel="icon" href="icon/favicon.jpg" type="image/x-icon"> 
-  <link rel="shortcut icon" href="icon/favicon.jpg" type="image/x-icon"> 
-
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/heroic-features.css" rel="stylsheet">
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154954948-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-154954948-1');
-  </script>
-
+    <title>AryMiku V.2</title>
+    <link rel="icon" href="icon/ico.jpg" type="image/x-icon"> 
+    <link rel="shortcut icon" href="icon/ico.jpg" type="image/x-icon"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sweetalert2.css">
 </head>
+<body ng-app="myApp" ng-controller="myCtrl">
 
-<body>
+<div ng-init="Run()"></div>
+ 
+<!-- Vertical navbar -->
+<ng-include src="'navbar.html'"></ng-include>
+<!-- End vertical navbar -->
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">AryMiku - Translate</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.facebook.com/AnimefunBB/">ติดต่อเรา</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Page Content -->
-  <div class="container">
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
 
-    <!-- Jumbotron Header -->
-    <header class="jumbotron my-2 bank-center bank-fonthead">
-      <h1 class="display-4">ข่าวสารใหม่</h1>
-      <p class="lead">
-        <div> 📌<a href="https://docs.google.com/spreadsheets/d/1mE4m9YVrdwUg19MiUBcoCLadaRiUxhlQ83qAZMvXr70/edit?usp=sharing" target="blank"> ติดตามสถานะของงาน  </a>📌</div>
-    </header>
+  <!-- Toggle button -->
+  <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4">
+    <i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Menu</small>
+  </button>
 
-    <!-- Page Features -->
-    <div class="row text-center">
+  <!-- Demo content -->
+  <h2 class="display-4 mb-4">AryMiku</h2>
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/feel.jpg" alt="" >
-          <div class="card-body">
-            <h5 class="card-title">Fate/stay night: Heaven's Feel</h5>
-            <p class="card-text">3 / 3 </p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/heavenfeel.html" class="btn btn-primary">Download  !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/Hitman.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Hitman (Kouji Seo)</h4>
-            <p class="card-text">17 / ??</p>
-            <p class="alert alert-danger"> ยังไม่จบ </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/hitman.html" class="btn btn-primary">Read & Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/Brawling.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Brawling Go</h4>
-            <p class="card-text">0 - 153</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/brawlinggo.html" class="btn btn-primary">Read & Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/3Pcover.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">The Secret 3P</h4>
-            <p class="card-text">18 / 18</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/3P.html" class="btn btn-primary">Read & Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/yugiarcv.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">YU-GI-OH ARC-V</h4>
-            <p class="card-text">120 - 147</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/yugioharcv.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/nagatoro.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Nagatoro</h4>
-            <p class="card-text">Vol.1 - 7</p>
-            <p class="alert alert-danger"> ยังไม่จบ </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/nagatoro.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/zi-o.png" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Kamen Rider Zi-O</h4>
-            <p class="card-text">45 - 49</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/zio.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/Aria.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Hidden No Aria</h4>
-            <p class="card-text">08</p>
-            <p class="alert alert-danger"> ยังไม่จบ </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/aria.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/fate_babi.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Fate/Grand Order: Zettai Maju Sensen Babylonia</h4>
-            <p class="card-text">01</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/fate_babi.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/sao.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Sword Art Online Alicization</h4>
-            <p class="card-text">01 - 24</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/sao.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/ana.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Nozoki Ana</h4>
-            <p class="card-text">OVA</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/ana.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/AzurLane_banner.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Azur Lane</h4>
-            <p class="card-text">01 - 04</p>
-            <p class="alert alert-danger"> ยังไม่จบ </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/AzurLane.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/Kyochuu_Rettou.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Kyochuu_Rettou</h4>
-            <p class="card-text">OVA</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/Kyochuu_Rettou.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/shadowverse_banner.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Shadowverse</h4>
-            <p class="card-text">01 - ??</p>
-            <p class="alert alert-danger"> ยังไม่จบ </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/shadowverse.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/kandagawa_banner.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Kandagawa Jet Girls</h4>
-            <p class="card-text">01 - 12</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/kandagawa.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/Hada_cover.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Hada Camera</h4>
-            <p class="card-text">01 - 57</p>
-            <p class="alert alert-danger"> ยังไม่จบ </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/HadaCamera.html" class="btn btn-primary">Read & Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/highschoolofthedead.jpg">
-          <div class="card-body">
-            <h4 class="card-title">High School Of The Dead (Manga)</h4>
-            <p class="card-text">เล่ม 01 - 04</p>
-            <p class="alert alert-danger"> ยังไม่จบ </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/HTOD.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/naga.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Nagatoro ComicAnthology (Manga)</h4>
-            <p class="card-text">เล่ม 01 - 03</p>
-            <p class="alert alert-danger"> ยังไม่จบ </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/Nagatoro_ComicAnthology.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/fuuka.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Fuuka สายลมรักฤดูร้อน (Anime [BD])</h4>
-            <p class="card-text">01 - 12</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/Fuuka_Anime.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="pic/Dogeza.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Dogeza de Tanondemita (Anime [BD])</h4>
-            <p class="card-text">01 - 13</p>
-            <p class="alert alert-success"> จบแล้ว </p>
-          </div>
-          <div class="card-footer">
-            <a href="dowloadpage/Dogeza.html" class="btn btn-primary">Download !</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!-- /.row -->
-
+  <!-- Search -->
+  <div class="form-group has-search">
+    <span class="fa fa-search form-control-feedback"></span>
+    <input type="text" class="form-control" placeholder="Search" ng-model="searchText">
   </div>
-  <!-- /.container -->
 
-  <!-- Footer -->
-  <footer class="py-3 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">รูปแบบสร้างขึ้นโดย AryMiku &copy; Github : <a href="https://github.com/AryMiku/arymiku_trans">Link</a></p>
+  <!-- ขึดเส้นใต้ -->
+  <div class="separator"></div>
+
+  <!-- Anime Show -->
+
+  <div class="row">
+    <div class="col-lg-4 col-sm-6 mb-4" ng-repeat="title in Titles | filter : searchText">
+      <div class="card">
+        <div class="card-header bank-fonthead">
+          <i class="fa fa-tag" ng-class="tagColor(title.Category)"></i> 
+          <a href='dowloadpage/{{title.DowloadPage}}'>{{title.Name}}</a> 
+          <span ng-class="title.Suscess == true ? 'badge badge-success' : 'badge badge-danger'">
+            <span ng-if="title.Suscess">Complete</span>
+            <span ng-if="!title.Suscess">Incoming</span>
+          </span>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <img ng-src="/pic/{{title.img}}" class="pop img-fluid" ng-click="showPicture(title.img)">
+            </div>
+            <div class="col-9">
+              <p class="card-text bank-fonthead">จำนวนตอน : {{title.Episode}}</p>
+              <p class="card-text bank-fonthead">รูปแบบ : {{title.Category}} / {{title.Type}}</p>
+              <p class="card-text bank-fonthead" ng-class="title.Suscess == true ? 'complete' : 'incoming'">
+                <span ng-if="title.Suscess">สถานะ : จบแล้ว</span>
+                <span ng-if="!title.Suscess">สถานะ : ยังไม่จบ</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /.container -->
-  </footer>
+  </div>
+</div>
+<!-- End demo content -->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+<!-- Model Content -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+        <img src="" class="imagepreview" style="width: 100%;" >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Model Content -->
 
+<!-- Script Files -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="../main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/sweetalert2.js"></script>
+  <script src="//morgul.github.io/ui-bootstrap4/ui-bootstrap-tpls-3.0.6.js"></script>
 </body>
-
 </html>

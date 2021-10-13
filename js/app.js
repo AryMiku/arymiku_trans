@@ -1649,7 +1649,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Fate/stay night : Heaven's Feel",
             Suscess : true,
             DowloadPage : "heavenfeel.html",
-            img : "feel.jpg",
+            img : "heavenfeel.jpg",
             Category : "Anime",
             Type : "The Movie / Blu-Ray",
             Episode : "3/3"
@@ -1658,7 +1658,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Hitman (Kouji Seo)",
             Suscess : false,
             DowloadPage : "hitman.html",
-            img : "Hitman.jpg",
+            img : "Hitman_2.jpg",
             Category : "Manga",
             Type : "Series / PDF",
             Episode : 18
@@ -1667,7 +1667,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Brawling Go",
             Suscess : true,
             DowloadPage : "brawlinggo.html",
-            img : "Brawling.jpg",
+            img : "Brawling_2.jpg",
             Category : "Manhua",
             Type : "Series",
             Episode : 153
@@ -1676,7 +1676,7 @@ app.controller('myCtrl', function($scope) {
             Name : "The Secret 3P",
             Suscess : true,
             DowloadPage : "3P.html",
-            img : "3Pcover.jpg",
+            img : "3P.jpg",
             Category : "Manhua",
             Type : "Series",
             Episode : 18
@@ -1685,7 +1685,7 @@ app.controller('myCtrl', function($scope) {
             Name : "YU-GI-OH ARC-V",
             Suscess : true,
             DowloadPage : "yugioharcv.html",
-            img : "yugiarcv.jpg",
+            img : "yugiarcv_page.jpg",
             Category : "Anime",
             Type : "Series",
             Episode : 147
@@ -1703,7 +1703,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Kamen Rider Zi-O",
             Suscess : true,
             DowloadPage : "zio.html",
-            img : "zi-o.png",
+            img : "Zio_2.png",
             Category : "Live Action",
             Type : "Series",
             Episode : 49
@@ -1712,7 +1712,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Hidden No Aria",
             Suscess : false,
             DowloadPage : "aria.html",
-            img : "Aria.jpg",
+            img : "Aria_2.jpg",
             Category : "Manga",
             Type : "Series",
             Episode : 8
@@ -1721,7 +1721,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Fate/Grand Order: Zettai Maju Sensen Babylonia",
             Suscess : true,
             DowloadPage : "fate_babi.html",
-            img : "fate_babi.jpg",
+            img : "fate_babi2.jpg",
             Category : "Anime",
             Type : "OVA",
             Episode : 1
@@ -1730,7 +1730,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Sword Art Online Alicization",
             Suscess : true,
             DowloadPage : "sao.html",
-            img : "sao.jpg",
+            img : "sao_page.jpg",
             Category : "Anime",
             Type : "Series",
             Episode : 24
@@ -1739,7 +1739,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Nozoki Ana",
             Suscess : true,
             DowloadPage : "ana.html",
-            img : "ana.jpg",
+            img : "ana2.jpg",
             Category : "Anime",
             Type : "OVA",
             Episode : 1
@@ -1748,7 +1748,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Azur Lane",
             Suscess : false,
             DowloadPage : "azurlane.html",
-            img : "AzurLane_banner.jpg",
+            img : "AzurLane.jpg",
             Category : "Anime",
             Type : "Series",
             Episode : 4
@@ -1757,7 +1757,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Kyochuu_Rettou",
             Suscess : true,
             DowloadPage : "kyochuu_rettou.html",
-            img : "Kyochuu_Rettou.jpg",
+            img : "Kyochuu_Rettou_2.jpg",
             Category : "Anime",
             Type : "The Movie",
             Episode : 1
@@ -1766,7 +1766,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Shadowverse",
             Suscess : false,
             DowloadPage : "shadowverse.html",
-            img : "shadowverse_banner.jpg",
+            img : "shadowverse_2.jpg",
             Category : "Anime",
             Type : "Series",
             Episode : 1
@@ -1775,7 +1775,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Kandagawa Jet Girls",
             Suscess : true,
             DowloadPage : "kandagawa.html",
-            img : "kandagawa_banner.jpg",
+            img : "kandagawa.jpg",
             Category : "Anime",
             Type : "Series",
             Episode : 12
@@ -1784,7 +1784,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Hada Camera",
             Suscess : false,
             DowloadPage : "hadacamera.html",
-            img : "Hada_cover.jpg",
+            img : "hada.png",
             Category : "Manga",
             Type : "Series",
             Episode : 49
@@ -1793,7 +1793,7 @@ app.controller('myCtrl', function($scope) {
             Name : "High School Of The Dead (Full Color)",
             Suscess : false,
             DowloadPage : "htod.html",
-            img : "highschoolofthedead.jpg",
+            img : "HTOD.jpg",
             Category : "Manga",
             Type : "Series",
             Episode : 04
@@ -1802,7 +1802,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Nagatoro ComicAnthology (Manga)",
             Suscess : false,
             DowloadPage : "nagatoro_comicanthology.html",
-            img : "naga.jpg",
+            img : "naga_alt.jpg",
             Category : "Manga",
             Type : "One Shot",
             Episode : 03
@@ -1811,7 +1811,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Fuuka สายลมรักฤดูร้อน",
             Suscess : true,
             DowloadPage : "fuuka_anime.html",
-            img : "fuuka.jpg",
+            img : "Fuuka_poster.jpg",
             Category : "Anime",
             Type : "Series / Blu-Ray",
             Episode : 12
@@ -1820,7 +1820,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Dogeza de Tanondemita",
             Suscess : true,
             DowloadPage : "Dogeza.html",
-            img : "Dogeza.jpg",
+            img : "Dogeza_full.jpg",
             Category : "Anime",
             Type : "Series / Blu-Ray",
             Episode : 13
@@ -1853,7 +1853,15 @@ app.controller('myCtrl', function($scope) {
 
     $scope.Test = "AAAA";
 
-    $scope.Run
+    $scope.RunLinkDowload = function(){
+        var url = new URL(window.location.href);
+        var c = url.searchParams.get("id");
+        $scope.idDowload = c;
+        // if($scope.idDowload == ""){
+        //     window.location.href = "index.html"
+        // }
+
+    }
 
 
 });

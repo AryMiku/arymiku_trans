@@ -1,80 +1,42 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>AryMiku - Fate Stay Night : Heaven Feel</title>
-  <link rel="icon" href="/icon/favicon.jpg" type="image/x-icon"> 
-  <link rel="shortcut icon" href="/icon/favicon.jpg" type="image/x-icon">
-
-  <!-- Bootstrap core CSS -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="/css/heroic-features.css" rel="stylsheet">
-
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154954948-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-154954948-1');
-  </script>
-
+    <title>AryMiku V.2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sweetalert2.css">
 </head>
+<body ng-app="myApp" ng-controller="myCtrl">
 
-<body>
+  <div ng-init="RunLinkDowload()"></div>
+ 
+<!-- Vertical navbar -->
+<ng-include src="'/navbar.html'"></ng-include>
+<!-- End vertical navbar -->
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="/index.html">AryMiku - Translate</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.facebook.com/AnimefunBB/">ติดต่อเรา</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Page Content -->
-  <br><br><br><br>
-  <div class="container" ng-app="myApp" ng-controller="myCtrl">
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
+  <!-- Toggle button -->
+  <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Menu</small></button>
+  <!-- Demo content -->
+  <!-- <h2 class="display-4">AryMiku</h2>
+  <div class="separator"></div> -->
+  <div class="row">
     <div class="container" style="margin-bottom: 10px;">
       <div class="row">
         <div class="col-sm">
           <center><img src="/pic/heavenfeel.jpg" style="width: 100%; max-width: 350px;" ></center>
         </div>
-        <div class="col-sm sarabun-font">
-          <b>ชื่อเรื่อง</b> : Fate Stay Night : Heaven Feel <hr>
+        <div class="col-sm sarabun-font mt-2">
+          <b>ชื่อเรื่อง</b> : {{Test}} <hr>
           <b>รูปแบบ</b> : [TH][BD][1080P] <hr> 
           <b>จำนวนตอน</b> : 3 <hr> 
           <b>เนื้อเรื่องย่อ</b> : อนิเมะในภาคนี้อ้างอิงจากช่วงเนื้อหาของเกมในรูทที่สามที่ชื่อว่า “Heaven’s Feel” ในไทม์ไลน์ภายหลังจาก 
@@ -84,94 +46,92 @@
         </div>
       </div>
     </div>
-    <br><br>
-    <!-- <div class="sarabun-font">
-      ** เนื้อหาจะถูกแบ่งออกเป็น 3 PART
-    </div><br> -->
-            <div class="alert alert-primary sarabun-font" role="alert">
+    <div class="container">
+      <div class="alert alert-primary sarabun-font" role="alert">
                 ลิงค์สำหรับการดาวโหลด
-            </div>
-            <table id="example" class="table table-striped table-bordered" style="width:100%">
-              <thead class="sarabun-font">
-                  <tr>
-                      <th>ชื่อตอน</th>
-                      <th>ลิงค์ดาวโหลด</th>
-                      <th class="priority-3">ใส่ซับโดย</th>
-                      <th class="priority-4">สถานะไฟล์</th>
-                  </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="align-middle bank-fonthead">Fate Stay Night : Heaven Feel I (Presage Flower)</td>
-                  <td class="sarabun-font">
-                    <center>
-                      <a href="https://mega.nz/#!DxhSgKbI!XnWh-sDRagNicrd47280OVan1ZG3_MNG1TEYSxNqNy4" target="_blank">MP4 (1.21 GB)</a><br>
-                      <a href="https://github.com/AryMiku/AryMiku_SubTH/tree/master/Fate%20Stay%20Night%20Heaven%20Feel" target="_blank">ASS</a>
-                    </center>
-                  </td>
-                  <td class="priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
-                  <td class="priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td class="align-middle bank-fonthead">Fate Stay Night : Heaven Feel II (Lost butterfly)</td>
-                  <td class="sarabun-font">
-                    <center>
-                      <a href="https://drive.google.com/open?id=1EFgnzogvjMEjQOCcL66c_wqLmj71lFKo" target="_blank">MKV (3.71 GB)</a><br>
-                      <a href="https://drive.google.com/open?id=1G8G9x4tXzH8si5-PJRSKu--rgqysfknD" target="_blank">MP4 (3.1 GB)</a><br>
-                      <a href="https://github.com/AryMiku/AryMiku_SubTH/tree/master/Kyochuu%20Rettou" target="_blank">ASS</a>
-                    </center>
-                  </td>
-                  <td class=" priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
-                  <td class=" priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td class="align-middle bank-fonthead">Fate Stay Night : Heaven Feel III (Spring Song)</td>
-                  <td class="sarabun-font">
-                    <center>
-                      <a href="https://drive.google.com/file/d/1H0kbE-U_ESJaebkRvO0oRHOzBdkhdzkF/view" target="_blank">MKV (1.99 GB)</a><br>
-                      <a href="https://drive.google.com/file/d/1gqwdOOLaP8Z-5TvahhtxAD-CXzVWaNJJ/view" target="_blank">MP4 (2.14 GB)</a><br>
-                      <a href="https://github.com/AryMiku/AryMiku_SubTH/tree/master/Kyochuu%20Rettou" target="_blank">ASS</a>
-                    </center>
-                  </td>
-                  <td class=" priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
-                  <td class=" priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-              </tbody>
-          </table>
-            <br>
-            <div class="alert alert-danger sarabun-font" role="alert">
-                ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
-            </div> 
-  <!-- /.container -->
-  </div><br>
-    <!-- Footer -->
-  <footer class="py-3 bg-dark">
-        <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; แปลมั่วๆโดย AryMiku 2021</p>
+      </div>
+      <div class="form-group has-search">
+        <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" class="form-control" placeholder="Search" ng-model="searchText">
+      </div>
+      <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead class="sarabun-font">
+            <tr>
+                <th class="priority-1">ชื่อตอน</th>
+                <th>ลิงค์ดาวโหลด</th>
+                <th class="priority-3">ใส่ซับโดย</th>
+                <th class="priority-4">สถานะไฟล์</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="align-middle bank-fonthead">Fate Stay Night : Heaven Feel I (Presage Flower)</td>
+            <td class="sarabun-font">
+              <center>
+                <a target="_blank" class="btn btn-outline-primary btn-sm" href="https://mega.nz/#!DxhSgKbI!XnWh-sDRagNicrd47280OVan1ZG3_MNG1TEYSxNqNy4">MP4 (1.21 GB)</a>
+                <a href="https://github.com/AryMiku/AryMiku_SubTH/tree/master/Fate%20Stay%20Night%20Heaven%20Feel" class="btn btn-outline-primary btn-sm marginbtt" target="_blank">ASS</a>
+              </center>
+            </td>
+            <td class="priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
+            <td class="priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td class="align-middle bank-fonthead">Fate Stay Night : Heaven Feel II (Lost butterfly)</td>
+            <td class="sarabun-font">
+              <center>
+                <a href="https://drive.google.com/open?id=1EFgnzogvjMEjQOCcL66c_wqLmj71lFKo" target="_blank" class="btn btn-outline-primary btn-sm mb-1">MKV (3.71 GB)</a><br>
+                <a href="https://drive.google.com/open?id=1G8G9x4tXzH8si5-PJRSKu--rgqysfknD" target="_blank" class="btn btn-outline-primary btn-sm mb-1">MP4 (3.1 GB)</a><br>
+                <a href="https://github.com/AryMiku/AryMiku_SubTH/tree/master/Kyochuu%20Rettou" target="_blank" class="btn btn-outline-primary btn-sm">ASS</a>
+              </center>
+            </td>
+            <td class=" priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
+            <td class=" priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td class="align-middle bank-fonthead">Fate Stay Night : Heaven Feel III (Spring Song)</td>
+            <td class="sarabun-font">
+              <center>
+                <a href="https://drive.google.com/file/d/1H0kbE-U_ESJaebkRvO0oRHOzBdkhdzkF/view" target="_blank" class="btn btn-outline-primary btn-sm mb-1">MKV (1.99 GB)</a><br>
+                <a href="https://drive.google.com/file/d/1gqwdOOLaP8Z-5TvahhtxAD-CXzVWaNJJ/view" target="_blank" class="btn btn-outline-primary btn-sm mb-1">MP4 (2.14 GB)</a><br>
+                <a href="https://github.com/AryMiku/AryMiku_SubTH/tree/master/Kyochuu%20Rettou" target="_blank" class="btn btn-outline-primary btn-sm mb-1">ASS</a>
+              </center>
+            </td>
+            <td class=" priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
+            <td class=" priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+        </tbody>
+    </table>
+      <div class="alert alert-danger sarabun-font" role="alert">
+          ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
+      </div> 
+    </div>
+            
+            
+  </div>
+
+
+</div>
+<!-- End demo content -->
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">              
+        <div class="modal-body">
+          <img src="" class="imagepreview" style="width: 100%;" >
         </div>
-        <!-- /.container -->
-      </footer>
-  
+      </div>
+    </div>
+  </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/angular.min.js"></script>
+  <!-- End Model Content -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="../main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
   <script src="/js/app.js"></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
-  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-  <script src="/js/ui-bootstrap-tpls-3.0.6.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('#example').DataTable({
-        "columnDefs": [
-          { "width": "60%", "targets": 0 },
-        ]
-      });
-    });
-  </script>
-
+  <script src="../js/sweetalert2.js"></script>
+  <script src="//morgul.github.io/ui-bootstrap4/ui-bootstrap-tpls-3.0.6.js"></script>
 </body>
-
 </html>
