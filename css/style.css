@@ -62,5 +62,7 @@
   .priority-2{
     display:none;
   }
-
+  .priority-1{
+    width: 60%;
+  }
 }

@@ -3,8 +3,9 @@
 <head>
     <title>AryMiku V.2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -13,137 +14,80 @@
 </head>
 <body ng-app="myApp" ng-controller="myCtrl">
 
-  <div ng-init="Run()"></div>
+<div ng-init="Run()"></div>
  
 <!-- Vertical navbar -->
-<div class="vertical-nav bg-white" id="sidebar">
-  <div class="py-4 px-3 mb-4 bg-light">
-    <div class="media d-flex align-items-center">
-      <img loading="lazy" src="pic/fuuka.jpg" alt="..." width="80" height="80" class="mr-3 rounded-circle img-thumbnail shadow-sm">
-      <div class="media-body">
-        <h4 class="m-0">A</h4>
-        <p class="font-weight-normal text-muted mb-0">W</p>
-      </div>
-    </div>
-  </div>
-
-  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Normal</p>
-
-  <ul class="nav flex-column bg-white mb-0">
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark bg-light">
-                <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
-                home
-            </a>
-    </li>
-    <li class="nav-item">
-      <a href="https://www.facebook.com/AnimefunBB" class="nav-link text-dark" target="_blank">
-                <i class="fa fa-facebook-official mr-3 text-primary fa-fw"></i>
-                Facebook
-            </a>
-    </li>
-    <!-- <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
-                <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
-                services
-            </a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
-                <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-                Gallery
-            </a>
-    </li> -->
-  </ul>
-
-  <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Secret</p>
-
-  <ul class="nav flex-column bg-white mb-0">
-    <li class="nav-item">
-        <a href="/secret/index2.html" class="nav-link text-dark">
-            <i class="fa fa-lock mr-3 text-primary fa-fw"></i>
-            DarkZone
-        </a>
-    </li>
-    <!-- <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
-                <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
-                bar charts
-            </a>
-    </li> -->
-    <!-- <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
-                <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
-                pie charts
-            </a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link text-dark">
-                <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
-                line charts
-            </a>
-    </li> -->
-  </ul>
-</div>
+<ng-include src="'navbar.html'"></ng-include>
 <!-- End vertical navbar -->
 
 
 <!-- Page content holder -->
 <div class="page-content p-5" id="content">
+
   <!-- Toggle button -->
-  <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Menu</small></button>
+  <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4">
+    <i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Menu</small>
+  </button>
+
   <!-- Demo content -->
-  <h2 class="display-4">AryMiku</h2><br>
+  <h2 class="display-4 mb-4">AryMiku</h2>
+
+  <!-- Search -->
   <div class="form-group has-search">
     <span class="fa fa-search form-control-feedback"></span>
     <input type="text" class="form-control" placeholder="Search" ng-model="searchText">
   </div>
+
+  <!-- ขึดเส้นใต้ -->
   <div class="separator"></div>
+
+  <!-- Anime Show -->
+
   <div class="row">
     <div class="col-lg-4 col-sm-6 mb-4" ng-repeat="title in Titles | filter : searchText">
-        <div class="card">
-            <div class="card-header bank-fonthead">
-              <i class="fa fa-tag" ng-class="tagColor(title.Category)"></i> 
-              <a href='dowloadpage/{{title.DowloadPage}}'>{{title.Name}}</a> 
-                <span ng-class="title.Suscess == true ? 'badge badge-success' : 'badge badge-danger'">
-                    <span ng-if="title.Suscess">Complete</span>
-                    <span ng-if="!title.Suscess">Incoming</span>
-                </span> 
+      <div class="card">
+        <div class="card-header bank-fonthead">
+          <i class="fa fa-tag" ng-class="tagColor(title.Category)"></i> 
+          <a href='dowloadpage/{{title.DowloadPage}}'>{{title.Name}}</a> 
+          <span ng-class="title.Suscess == true ? 'badge badge-success' : 'badge badge-danger'">
+            <span ng-if="title.Suscess">Complete</span>
+            <span ng-if="!title.Suscess">Incoming</span>
+          </span>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3">
+              <img src="/pic/{{title.img}}" class="pop img-fluid" ng-click="showPicture(title.img)">
             </div>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-3">
-                    <img src="/pic/{{title.img}}" class="pop img-fluid" ng-click="showPicture(title.img)">
-                </div>
-                <div class="col-9">
-                    <p class="card-text bank-fonthead">จำนวนตอน : {{title.Episode}}</p>
-                    <p class="card-text bank-fonthead">รูปแบบ : {{title.Category}} / {{title.Type}}</p>
-                    <p class="card-text bank-fonthead" ng-class="title.Suscess == true ? 'complete' : 'incoming'">
-                        <span ng-if="title.Suscess">สถานะ : จบแล้ว</span>
-                        <span ng-if="!title.Suscess">สถานะ : ยังไม่จบ</span>
-                    </p>
-                </div>
-              </div>
+            <div class="col-9">
+              <p class="card-text bank-fonthead">จำนวนตอน : {{title.Episode}}</p>
+              <p class="card-text bank-fonthead">รูปแบบ : {{title.Category}} / {{title.Type}}</p>
+              <p class="card-text bank-fonthead" ng-class="title.Suscess == true ? 'complete' : 'incoming'">
+                <span ng-if="title.Suscess">สถานะ : จบแล้ว</span>
+                <span ng-if="!title.Suscess">สถานะ : ยังไม่จบ</span>
+              </p>
             </div>
           </div>
-    </div>
-  </div>
-
-
-</div>
-<!-- End demo content -->
-
-<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">              
-        <div class="modal-body">
-          <img src="" class="imagepreview" style="width: 100%;" >
         </div>
       </div>
     </div>
   </div>
+</div>
+<!-- End demo content -->
 
-  <!-- End Model Content -->
+<!-- Model Content -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+        <img src="" class="imagepreview" style="width: 100%;" >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Model Content -->
+
+<!-- Script Files -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

@@ -1832,15 +1832,6 @@ app.controller('myCtrl', function($scope) {
         $('#imagemodal').modal('show');
     }
 
-    $scope.Run = function (){
-        // Swal.fire({
-        //     title: 'กำลังโหลดจ้า...',
-        //     showConfirmButton: false,
-        //     allowOutsideClick: false,
-        // });
-        // swal.showLoading();
-    }
-
     $scope.tagColor = function (Category){
         let classselect = '';
         switch(Category){
@@ -1860,7 +1851,9 @@ app.controller('myCtrl', function($scope) {
         return classselect;
     }
 
+    $scope.Test = "AAAA";
 
+    $scope.Run
 
 
 });
@@ -2144,17 +2137,17 @@ app.controller('secretCtrl',function($scope,$http,$q){
     }
 })
 
-app.directive('myPostRepeatDirective', function() {
-  return function(scope, element, attrs) {
-    if (scope.$last){
-      $('#example').DataTable({
-        "columnDefs": [
-          { "width": "50%", "targets": 0 },
-        ]
-      });
-    }
-  };
-});
+// app.directive('myPostRepeatDirective', function() {
+//   return function(scope, element, attrs) {
+//     if (scope.$last){
+//       $('#example').DataTable({
+//         "columnDefs": [
+//           { "width": "50%", "targets": 0 },
+//         ]
+//       });
+//     }
+//   };
+// });
 
 app.directive('bsTooltip', function(){
     return {
