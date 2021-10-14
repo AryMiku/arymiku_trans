@@ -1824,6 +1824,15 @@ app.controller('myCtrl', function($scope) {
             Category : "Anime",
             Type : "Series / Blu-Ray",
             Episode : 13
+        },
+        {
+            Name : "Tawawa On Monday",
+            Suscess : true,
+            DowloadPage : "Tawawa.html",
+            img : "Tawawa.jpg",
+            Category : "Anime",
+            Type : "Series / Blu-Ray",
+            Episode : 14
         }
     ]
 
