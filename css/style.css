@@ -46,9 +46,9 @@
 .badge-animethaisound {background-color:#EFF210;color: black;}
 
 .upper{
-  position: absolute;
+  position: fixed;
   left: 50%;
-  top: 50%;
+  top: 30%;
   z-index: 0;
 }
 

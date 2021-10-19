@@ -14,7 +14,7 @@
 </head>
 <body ng-app="myApp" ng-controller="secretCtrl">
 
-  <div ng-init="Run()"></div>
+  <div ng-init="RunMyDrive()"></div>
  
 <!-- Vertical navbar -->
 <ng-include src="'../navbar.html'"></ng-include>
@@ -54,15 +54,22 @@
           <td>
             <a href="#" ng-click="sortType = 'Year'; sortReverse = !sortReverse">
             Year
-              <span ng-show="sortType == 'tastiness' && !sortReverse" class="fa fa-caret-down"></span>
-              <span ng-show="sortType == 'tastiness' && sortReverse" class="fa fa-caret-up"></span>
+              <span ng-show="sortType == 'Year' && !sortReverse" class="fa fa-caret-down"></span>
+              <span ng-show="sortType == 'Year' && sortReverse" class="fa fa-caret-up"></span>
             </a>
           </td>
           <td>
             <a href="#" ng-click="sortType = 'Link'; sortReverse = !sortReverse">
-            Link
-              <span ng-show="sortType == 'tastiness' && !sortReverse" class="fa fa-caret-down"></span>
-              <span ng-show="sortType == 'tastiness' && sortReverse" class="fa fa-caret-up"></span>
+            Path
+              <span ng-show="sortType == 'Link' && !sortReverse" class="fa fa-caret-down"></span>
+              <span ng-show="sortType == 'Link' && sortReverse" class="fa fa-caret-up"></span>
+            </a>
+          </td>
+          <td ng-if="false">
+            <a href="#" ng-click="sortType = 'Group'; sortReverse = !sortReverse">
+            Group
+              <span ng-show="sortType == 'Group' && !sortReverse" class="fa fa-caret-down"></span>
+              <span ng-show="sortType == 'Group' && sortReverse" class="fa fa-caret-up"></span>
             </a>
           </td>
         </tr>
@@ -71,16 +78,17 @@
       <tbody>
         <tr ng-repeat="Data in filteredTodos | orderBy:sortType:sortReverse | filter : searchText" class="bank-fonthead">
           <td><span ng-class="GetClassType(Data.Type)" >{{Data.Type}}</span></td>
-          <td><a href="Dowload.html?id={{Data.Id}}" target="_blank" bs-tooltip>{{Data.Name}}</a></td>
-          <td>2</td>
-          <td><a href="#" target="_blank">Link</a></td>
+          <td><a href="Dowload.html?id={{Data.Id}}" target="_blank" pic-tooltip>{{Data.Name}}</a></td>
+          <td>{{Data.Year}}</td>
+          <td>{{Data.Download}}</td>
+          <td ng-if="false">{{Data.Group}}</td>
         </tr>
       </tbody>
     </table>
     
     <div id="bank" class="upper"></div>
 
-    <ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" num-pages="numPages"></ul>
+    <!-- <ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" num-pages="numPages"></ul> -->
   </div>
 
 

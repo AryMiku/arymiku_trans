@@ -1938,6 +1938,35 @@ app.controller('secretCtrl',function($scope,$http,$q){
         });
     }
 
+    $scope.RunMyDrive = function(){
+        Swal.fire({
+            title: 'กำลังโหลดจ้า...',
+            showConfirmButton: false,
+            allowOutsideClick: false,
+        });
+        swal.showLoading();
+        $http.get("https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/myDrive/API_FileMyDrive.json").then(function(res,status,xhr) {
+            /*เอา Data ดึงไปใช้ตรงๆที่หน้าเมนูเลย*/
+            $scope.Titles = res.data;
+            // dataAll = res.data;
+            // /*เอาไว้นับว่าควรทำ Pagination*/
+            // let pages = parseInt($scope.data.length / 8) + 1; //หน้าหนึ่งไม่เกิน 8 เรื่อง
+            // $scope.page = [];
+            // for(let i = 0; i < pages; i++){
+            //     $scope.page.push(i+1);
+            // }
+            // console.log($scope.page);
+            $scope.filteredTodos = []
+            $scope.totalItems = 64;
+            $scope.currentPage = 1;
+            $scope.maxSize = 5;
+            $scope.bigTotalItems = $scope.Titles.length;
+            $scope.bigCurrentPage = 1;
+            $scope.numPerPage = 10;
+            swal.close();
+        });
+    }
+
     $scope.$watch('bigCurrentPage', function() {
         if($scope.bigCurrentPage != undefined){
             var begin = (($scope.bigCurrentPage - 1) * $scope.numPerPage)
@@ -2110,6 +2139,14 @@ app.controller('secretCtrl',function($scope,$http,$q){
 
     }
 
+    $scope.ShowPictureHoverJSON = function(Picture){
+        // $scope.aaa = '/pic/secret/'+Id+'.jpg'
+        let a = "<center><img id='bank2' src="+Picture+" width='248px' height='350px'></center>"
+        $("#bank").append(a);
+        $scope.$apply();
+
+    }
+
     $scope.change = function(){
         $scope.newval = [];
         $scope.data = dataAll
@@ -2173,6 +2210,21 @@ app.directive('bsTooltip', function(){
             $(element).hover(function(){
                 // on mouseenter
                 scope.ShowPictureHover(scope.Data.Id);
+            }, function(){
+                // on mouseleave
+                $("#bank2").remove();
+            });
+        }
+    };
+});
+
+app.directive('picTooltip', function(){
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs){
+            $(element).hover(function(){
+                // on mouseenter
+                scope.ShowPictureHoverJSON(scope.Data.Picture);
             }, function(){
                 // on mouseleave
                 $("#bank2").remove();
