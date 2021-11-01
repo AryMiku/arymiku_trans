@@ -76,7 +76,7 @@
       </thead>
       
       <tbody>
-        <tr ng-repeat="Data in filteredTodos | orderBy:sortType:sortReverse | filter : searchText" class="bank-fonthead">
+        <tr ng-repeat="Data in Titles | orderBy:sortType:sortReverse | filter : searchText" class="bank-fonthead">
           <td><span ng-class="GetClassType(Data.Type)" >{{Data.Type}}</span></td>
           <td><a href="Dowload.html?id={{Data.Id}}" target="_blank" pic-tooltip>{{Data.Name}}</a></td>
           <td>{{Data.Year}}</td>
