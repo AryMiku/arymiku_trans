@@ -1,24 +1,20 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+    <title>AryMiku V.2</title>
+    <link rel="icon" href="/icon/ico.jpg" type="image/x-icon"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sweetalert2.css">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>AryMiku - High School Of The Dead</title>
-  <link rel="icon" href="/icon/favicon.jpg" type="image/x-icon"> 
-  <link rel="shortcut icon" href="/icon/favicon.jpg" type="image/x-icon">
-
-  <!-- Bootstrap core CSS -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="/css/heroic-features.css" rel="stylsheet">
-
+    <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154954948-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -27,124 +23,159 @@
 
     gtag('config', 'UA-154954948-1');
   </script>
-
 </head>
+<body ng-app="myApp" ng-controller="myCtrl">
 
-<body>
+  <div ng-init="RunLinkDowload()"></div>
+ 
+<!-- Vertical navbar -->
+<ng-include src="'/navbar.html'"></ng-include>
+<!-- End vertical navbar -->
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="/index.html">AryMiku - Translate</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.facebook.com/AnimefunBB/">ติดต่อเรา</a>
-          </li>
-        </ul>
+
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
+  <!-- Toggle button -->
+  <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Menu</small></button>
+  <!-- Demo content -->
+  <!-- <h2 class="display-4">AryMiku</h2>
+  <div class="separator"></div> -->
+  <div class="row">
+    <div class="container" style="margin-bottom: 10px;">
+      <div class="row">
+        <div class="col-sm">
+          <center><img src="/pic/HTOD.jpg" style="width: 100%; max-width: 350px;" ></center>
+        </div>
+        <div class="col-sm sarabun-font mt-2">
+          <b>ชื่อเรื่อง</b> : High School Of The Dead <hr>
+          <b>รูปแบบ</b> : [TH][Manga][Full Color] <hr> 
+          <b>จำนวนเล่ม</b> : 5 <hr> 
+          <b>เนื้อเรื่องย่อ</b> : เรื่องราว ทั้งหมดเริ่มต้นขึ้นที่ โรงเรียนมัธยมปลายฟูจิมิ
+          โคมุโระ ทาคาชิ เด็กหนุ่มที่โดดเรียนออกมาอยู่บนดาดฟ้า
+          ของโรงเรียนเขาได้สังเกตุเห็น ชายคนหนึ่งพยายามบุกเข้า
+          มาในโรงเรียนและกัดแขนอาจารย์ที่เข้าไปห้ามปรามจนเสียชีวิตลง
+          แต่แล้วอาจารย์ที่เสียชีวิตไปกลับฟื้นขึ้นมาและกัด
+          กินผู้คนรอบข้างจนเกิดความวุ่ยวายไปทั่วโรงเรียน ทาคาชิ
+          จึงพา เรย์เพื่อนสนิทสมัยเด็กและ ฮิซาชิแฟนของเรย์เพื่อนสนิทของเขาหนี
+          แต่โชคร้ายที่ ฮิซาชิโดนกัดที่แขนกำลัง
+          จนจะกลายเป็นศพเดินได้ ทาคาชิไม่มีทางเลือกจึงต้องฆ่า
+          เขาด้วยมือตนเอง เพื่อปกป้องเรย์ จากนั้นเขาจึงได้รวมตัว
+          กับเพื่อนในโรงเรียนที่รอดชีวิตจากศพเดินได้ แล้วหาทาง
+          หนีไปจากโรงเรียนเพื่อเอาชีวิตตัวรอด จากเหล่ากองทัพ
+          ซอมบี้ที่กำลังคุกคาม แล้วพวกเขาที่เหลือรอด
+          จะเป็นเช่นไรโปรดคอยติดตาม... <hr>
+          <b>สถานะ</b> : <span class="badge badge-danger">ยังไม่จบ</span>
+        </div>
       </div>
     </div>
-  </nav>
+    <div class="container">
+      <div class="alert alert-success sarabun-font" role="alert">
+        คำอธิบาย
+      </div>
+      <div>
+        - เรื่องนี้ไม่มีเวอร์ชั่นแบบอ่านให้นะครับ เป็นแบบ Dowload อย่างเดียว แล้วก็เป็น "สี" ทั้งเล่มด้วยนะครับ <br>
+        - เล่มที่ 3 นี้มีฉากโป๊เปลือยนิดหน่อยนะครับ (มากกว่าเวอร์ชั่นที่ขายในไทย)
+      </div><br>
+      <div class="alert alert-primary sarabun-font" role="alert">
+                ลิงค์สำหรับการดาวโหลด
+      </div>
+      <div class="form-group has-search">
+        <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" class="form-control" placeholder="Search" ng-model="searchText">
+      </div>
+      <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead class="sarabun-font">
+            <tr>
+                <th class="priority-1">ชื่อตอน</th>
+                <th>ลิงค์ดาวโหลด</th>
+                <th class="priority-3">ดัดแปลงไฟล์</th>
+                <th class="priority-4">สถานะไฟล์</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="align-middle bank-fonthead">High School Of The Dead เล่ม 1 [Full Color]</td>
+            <td class="sarabun-font">
+              <center>
+                <a target="_blank" class="btn btn-outline-primary btn-sm" href="http://www.mediafire.com/file/3zjc0kkxfk5ziax/Highschool_of_the_Dead_-_Full_Color_Edition_v01_%255BUasaha%255D_%2528Yen_Press%2529.rar/file?fbclid=IwAR2EkUeNo0qhjPZJ1nSGOMTqwmUNQb__hvZFzyqfLCWaH3oNdNmkfPOcHAQ">RAR (Mediafile)</a>
+              </center>
+            </td>
+            <td class="priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
+            <td class="priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td class="align-middle bank-fonthead">High School Of The Dead เล่ม 2 [Full Color]</td>
+            <td class="sarabun-font">
+              <center>
+                <a target="_blank" class="btn btn-outline-primary btn-sm" href="https://www.mediafire.com/file/2anhkbirrqdluv4/Highschool_of_the_Dead_-_Full_Color_Edition_v02_%5BUasaha%5D_%28Yen_Press%29_%5BTH%5D.rar/file?fbclid=IwAR0humaScAzvKdnxDO0Y1ViXn2acjY4C0sJdGmaC_Wyj4iXwvDQC1sTnGxY">RAR (Mediafile)</a>
+              </center>
+            </td>
+            <td class="priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
+            <td class="priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td class="align-middle bank-fonthead">High School Of The Dead เล่ม 3 [Full Color]</td>
+            <td class="sarabun-font">
+              <center>
+                <a target="_blank" class="btn btn-outline-primary btn-sm" href="https://www.mediafire.com/file/gl26d4k2ml8r6dc/Highschool_of_the_Dead_-_Full_Color_Edition_v03_%5BUasaha%5D_%28Yen_Press%29_%5BTH%5D.rar/file">RAR (Mediafile)</a>
+              </center>
+            </td>
+            <td class="priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
+            <td class="priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td class="align-middle bank-fonthead">High School Of The Dead เล่ม 4 [Full Color]</td>
+            <td class="sarabun-font">
+              <center>
+                <a target="_blank" class="btn btn-outline-primary btn-sm" href="https://www.mediafire.com/file/7g5z0pxu8u15vta/Highschool_of_the_Dead_-_Full_Color_Edition_v04_%255BUasaha%255D%255BTH%255D_%2528Yen_Press%2529.rar/file">RAR (Mediafile)</a>
+              </center>
+            </td>
+            <td class="priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
+            <td class="priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td class="align-middle bank-fonthead">High School Of The Dead เล่ม 5 [Full Color]</td>
+            <td class="sarabun-font">
+              <center>
+                <a target="_blank" class="btn btn-outline-primary btn-sm" href="https://www.mediafire.com/file/nb0nksceggn0x8l/Highschool_of_the_Dead_-_Full_Color_Edition_v05_%255BUasaha%255D_%2528Yen_Press%2529.rar/file">RAR (Mediafile)</a>
+              </center>
+            </td>
+            <td class="priority-3"><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank" class="sarabun-font">AryMiku</a></center></td>
+            <td class="priority-4"><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+        </tbody>
+    </table>
+      <div class="alert alert-danger sarabun-font" role="alert">
+          ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
+      </div> 
+    </div>
+            
+            
+  </div>
 
-  <!-- Page Content -->
-  <br><br><br>
-  <div class="container" ng-app="myApp" ng-controller="myCtrl">
-    <div class="text-center">
-      <div><h1>High School Of The Dead [Full Color]</h1></div>
-      <img src="/pic/HTOD.jpg" alt="" class="img-fluid" width="350px">
-    </div><br>
-    <!-- <div>
-      ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
-    </div><br> -->
-            <!-- <div>ดาวโหลดได้ตามปุ่มข้างล่างนี้</div><br> -->
-            <div class="alert alert-success" role="alert">
-              คำอธิบาย
-            </div>
-            <div>
-              - เรื่องนี้ไม่มีเวอร์ชั่นแบบอ่านให้นะครับ เป็นแบบ Dowload อย่างเดียว แล้วก็เป็น "สี" ทั้งเล่มด้วยนะครับ <br>
-              - เล่มที่ 3 นี้มีฉากโป๊เปลือยนิดหน่อยนะครับ (มากกว่าเวอร์ชั่นที่ขายในไทย)
-            </div><br>
-            <div class="alert alert-primary" role="alert">
-                ลิงค์สำหรับการอ่าน
-            </div>
-            <table id="example" class="table table-striped table-bordered" style="width:100%">
-              <thead>
-                  <tr>
-                      <th>ชื่อตอน</th>
-                      <th>ลิงค์โหลด</th>
-                      <th>สถานะไฟล์</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>High School Of The Dead เล่ม 1 [Full Color]</td>
-                      <td><center><a href="http://www.mediafire.com/file/3zjc0kkxfk5ziax/Highschool_of_the_Dead_-_Full_Color_Edition_v01_%255BUasaha%255D_%2528Yen_Press%2529.rar/file?fbclid=IwAR2EkUeNo0qhjPZJ1nSGOMTqwmUNQb__hvZFzyqfLCWaH3oNdNmkfPOcHAQ" target="_blank">โหลด</a></center></td>
-                      <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                  </tr>
-                  <tr>
-                      <td>High School Of The Dead เล่ม 2 [Full Color]</td>
-                      <td><center><a href="https://www.mediafire.com/file/2anhkbirrqdluv4/Highschool_of_the_Dead_-_Full_Color_Edition_v02_%5BUasaha%5D_%28Yen_Press%29_%5BTH%5D.rar/file?fbclid=IwAR0humaScAzvKdnxDO0Y1ViXn2acjY4C0sJdGmaC_Wyj4iXwvDQC1sTnGxY" target="_blank">โหลด</a></center></td>
-                      <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                  </tr>
-                  <tr>
-                    <td>High School Of The Dead เล่ม 3 [Full Color]</td>
-                    <td><center><a href="https://www.mediafire.com/file/gl26d4k2ml8r6dc/Highschool_of_the_Dead_-_Full_Color_Edition_v03_%5BUasaha%5D_%28Yen_Press%29_%5BTH%5D.rar/file" target="_blank">โหลด</a></center></td>
-                    <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>High School Of The Dead เล่ม 4 [Full Color]</td>
-                  <td><center><a href="https://www.mediafire.com/file/7g5z0pxu8u15vta/Highschool_of_the_Dead_-_Full_Color_Edition_v04_%255BUasaha%255D%255BTH%255D_%2528Yen_Press%2529.rar/file" target="_blank">โหลด</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-              </tr>
-              </tbody>
-          </table>
-            <br>
-            <div class="alert alert-danger" role="alert">
-                ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
-            </div> 
-  <!-- /.container -->
-  </div><br>
-    <!-- Footer -->
-  <footer class="py-3 bg-dark">
-        <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; แปลมั่วๆโดย AryMiku 2020</p>
+
+</div>
+<!-- End demo content -->
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">              
+        <div class="modal-body">
+          <img src="" class="imagepreview" style="width: 100%;" >
         </div>
-        <!-- /.container -->
-      </footer>
-  
+      </div>
+    </div>
+  </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/angular.min.js"></script>
+  <!-- End Model Content -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="../main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
   <script src="/js/app.js"></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
-  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('#example').DataTable({
-        "columnDefs": [
-          { "width": "75%", "targets": 0 },
-        ]
-      });
-    });
-  </script>
-
+  <script src="../js/sweetalert2.js"></script>
+  <script src="//morgul.github.io/ui-bootstrap4/ui-bootstrap-tpls-3.0.6.js"></script>
 </body>
-
 </html>
