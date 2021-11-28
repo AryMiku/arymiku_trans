@@ -1796,7 +1796,7 @@ app.controller('myCtrl', function($scope) {
             img : "HTOD.jpg",
             Category : "Manga",
             Type : "Series",
-            Episode : 05
+            Episode : 06
         },
         {
             Name : "Nagatoro ComicAnthology (Manga)",
