@@ -1791,12 +1791,12 @@ app.controller('myCtrl', function($scope) {
         },
         {
             Name : "High School Of The Dead (Full Color)",
-            Suscess : false,
+            Suscess : true,
             DowloadPage : "htod.html",
             img : "HTOD.jpg",
             Category : "Manga",
             Type : "Series",
-            Episode : 06
+            Episode : 07
         },
         {
             Name : "Nagatoro ComicAnthology (Manga)",
