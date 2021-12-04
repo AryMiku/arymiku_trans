@@ -1371,24 +1371,20 @@ app.controller('myCtrl', function($scope) {
 
     $scope.nagatoro = [
         {
-            Name : "เล่มที่ 1 - 4 => ",
-            mega : "https://mega.nz/file/5IlCjLqS#-COazz1gptSN1aMqktfc9_JCLHaw1mKxmdRNo_e3On4",
-            gdrive : "https://drive.google.com/file/d/18l5e85imIAzV-m0idhVMyfteKTmUBrW9"
+            Name : "เล่มที่ 1 - 4",
+            mega : "https://mega.nz/file/5IlCjLqS#-COazz1gptSN1aMqktfc9_JCLHaw1mKxmdRNo_e3On4"
         },
         {
-            Name : "เล่มที่ 5 => ",
-            mega : "https://mega.nz/#!rshSwKBY!HTsyK0lsbkgdjOSOog7njTNyZephbK6UjncbuAVfVRQ",
-            gdrive : "https://drive.google.com/file/d/1Su3OwP5cicitUrNBThemO8mcZJMH2UOs"
+            Name : "เล่มที่ 5",
+            mega : "https://mega.nz/file/JVMCzbQY#nKtC0ICfU1OwDXGNayq2hxGmD2UpzGFL0jRaSxGtPNo"
         },
         {
-            Name : "เล่มที่ 6 => ",
-            mega : "https://mega.nz/file/VR1klZ4Y#XwzeDZqY8ZwamGshcw6X3sQ_Rb_nWKqVH84KiBtOBBA",
-            gdrive : "https://drive.google.com/open?id=1nz_UIoHgr6Los66cn9cX5WDoH_mDh0RA"
+            Name : "เล่มที่ 6",
+            mega : "https://mega.nz/file/VR1klZ4Y#XwzeDZqY8ZwamGshcw6X3sQ_Rb_nWKqVH84KiBtOBBA"
         },
         {
-            Name : "เล่มที่ 7 => ",
-            mega : "https://mega.nz/file/Ud1m0TwB#ZLqE-zXDF538OylDvW4Aj4NKeu1itFaUMc5L0qFMqUM",
-            gdrive : "https://drive.google.com/file/d/1kKhkhfZNjm7yRLfw_p4oR0mFZJQQXaiM"
+            Name : "เล่มที่ 7",
+            mega : "https://mega.nz/file/Ud1m0TwB#ZLqE-zXDF538OylDvW4Aj4NKeu1itFaUMc5L0qFMqUM"
         }
     ]
 
