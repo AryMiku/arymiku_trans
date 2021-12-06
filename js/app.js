@@ -2032,7 +2032,7 @@ app.controller('secretCtrl',function($scope,$http,$q){
     }
 
 
-    $scope.edragon2 = async function(){
+    $scope.edragon2 = async function() {
         var url = new URL(window.location.href);
         var c = url.searchParams.get("id");
         $scope.idDowload = c;
@@ -2048,6 +2048,13 @@ app.controller('secretCtrl',function($scope,$http,$q){
             // });
             //console.log($scope.dataOnPage);
             $scope.dataOnPage = $scope.data;
+            $(document).ready(function() {
+                $('#example').DataTable({
+                  "columnDefs": [
+                    { "width": "60%", "targets": 0 },
+                  ]
+                });
+              });
         })
         .catch(function(){
             Swal.fire({
