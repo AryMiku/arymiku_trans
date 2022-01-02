@@ -1783,7 +1783,7 @@ app.controller('myCtrl', function($scope) {
             img : "hada.png",
             Category : "Manga",
             Type : "Series",
-            Episode : 67
+            Episode : 68
         },
         {
             Name : "High School Of The Dead (Full Color)",
