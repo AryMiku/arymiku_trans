@@ -1,24 +1,20 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+    <title>AryMiku V.2</title>
+    <link rel="icon" href="/icon/ico.jpg" type="image/x-icon"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sweetalert2.css">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>AryMiku - Dogeza de Tanondemita</title>
-  <link rel="icon" href="/icon/favicon.jpg" type="image/x-icon"> 
-  <link rel="shortcut icon" href="/icon/favicon.jpg" type="image/x-icon">
-
-  <!-- Bootstrap core CSS -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="/css/heroic-features.css" rel="stylsheet">
-  <link rel="stylesheet" href="/css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154954948-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -27,254 +23,223 @@
 
     gtag('config', 'UA-154954948-1');
   </script>
-
 </head>
+<body ng-app="myApp" ng-controller="myCtrl">
 
-<body>
+  <div ng-init="RunLinkDowload()"></div>
+ 
+<!-- Vertical navbar -->
+<ng-include src="'/navbar.html'"></ng-include>
+<!-- End vertical navbar -->
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="/index.html">AryMiku - Translate</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.facebook.com/AnimefunBB/">ติดต่อเรา</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Page Content -->
-  <br><br><br><br>
-  <div class="container" ng-app="myApp" ng-controller="myCtrl">
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
+  <!-- Toggle button -->
+  <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Menu</small></button>
+  <!-- Demo content -->
+  <!-- <h2 class="display-4">AryMiku</h2>
+  <div class="separator"></div> -->
+  <div class="row">
     <div class="container" style="margin-bottom: 10px;">
       <div class="row">
         <div class="col-sm">
           <center><img src="/pic/Dogeza_full.jpg" style="width: 100%; max-width: 350px;" ></center>
         </div>
-        <div class="col-sm">
+        <div class="col-sm sarabun-font mt-2">
           <b>ชื่อเรื่อง</b> : Dogeza de Tanondemita <hr>
           <b>รูปแบบ</b> : [TH][BD][1080P] <hr> 
           <b>จำนวนตอน</b> : 01 - 13 [END] <hr> 
-          <b>เนื้อเรื่องย่อ</b> : อนิเมะเรื่องสั้นที่เราว่าพระเอกของเราใช้ท่า โดเกะซะ (ถ้าก้มขอร้อง)เพื่อที่จะขอดูหน้าอกของสาวๆ ส่วนจะเป็นยังไงก็อยากให้ไปลองดูกันเองครับผม <hr> 
+          <b>เนื้อเรื่องย่อ</b> : อนิเมะเรื่องสั้นที่เราว่าพระเอกของเราใช้ท่า โดเกะซะ (ถ้าก้มขอร้อง) เพื่อที่จะขอดูหน้าอกของสาวๆ ส่วนจะเป็นยังไงก็อยากให้ไปลองดูกันเองครับผม <hr> 
           <b> แนวเรื่อง </b> :  อนิเมะเรื่องสั้น , ลามก , 18+ <hr>
           <b>สถานะ</b> : <span class="badge badge-success">จบแล้ว</span>
         </div>
       </div>
     </div>
-    <br><br>
-    <div>
-      ** ไฟล์นี้เป็นไฟล์ BD 1080P เป็น SoftSub ทั้งหมด แต่ว่ามีให้เลือกเป็นแบบ ASS และ PGS <br>
-      ** ไฟล์มี 2 ประเภทคือ MVK แบบไม่ลดคุณภาพไฟล์จะใหญ่มากขนาด 1 GB ต่อตอนผมจะ (FLAC) เอาไว้ ส่วนขนาดปกติจะเป็น (AC3) นะครับ
-      <div class="incoming">** ไฟล์ Google Drive เสียนะครับ</div>
-    </div><br>
-            <div class="alert alert-primary" role="alert">
+    <div class="container">
+      <div class="sarabun-font marginbtt">
+        <div class="incoming">** รหัส Dowload ไฟล์ : gizq</div>
+      </div>
+      <div class="alert alert-primary sarabun-font" role="alert">
                 ลิงค์สำหรับการดาวโหลด
-            </div>
-            <table id="example" class="table table-striped table-bordered" style="width:100%">
-              <thead>
-                  <tr>
-                      <th>ชื่อตอน</th>
-                      <th>ลิงค์ดาวโหลด</th>
-                      <th>ใส่ซับโดย</th>
-                      <th>สถานะไฟล์</th>
-                  </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Dogeza de Tanondemita - 01 Minori Gakesaka [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/1PYo4U-6vFU0cdyvDd9OJ4hHhkrsdZGcK/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1UH7l8O_41v3tdPe3USxwuy9bqUOwyziz/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 02 Indeterminate Equation [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/1qksz1sua4suqHAaaZjNyZPvQD-SYlQB0/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1E2Sntfh0Ccs09VpNgmlpt-MsLSRCl-CC/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 03 No Panties No Problem!  [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/1BJTU_d8ZGlNUIJnDI04y2muXdzJwsGJ-/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1qLPGVUm1RdhmDTVOjzTQlhnh10aTojaG/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 04 Hardboiled Dogezaland [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/1fvhG0QHjfJ5Tvx7UETL7jRL8RgNqe_ln/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1rhXnVE4szKuWLJ-ziJbQdxoX8DbVfAB-/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 05 Hey There! [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/1H2vySt0YlXsjmvWvIm7L5F9iRcpjEUZb/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1daFzOJajQIshn_-D7QjrNbgjEX_lXb4c/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 06 Rei Shioya [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/14eDfIdtZizqJw5oV0fZK8sMhEJUILce5/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1sn7200LC3yWegYJDkIYUqvnYCOjuFGO6/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 07 Tama Kyan [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/10vArbBgyqknLeJCMoaaDWKAKN-PLCiV1/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1wWfb00Z1fm3ZX7b8na_N6pzhrgnHx7gH/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 08 I'm a Baby Now [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/1yXp5vB0DNuU0DaI5FEblKUDdOIUSOGuR/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/15OO5T59EhFPLAHZmdqVlQxoTM3E1UXuA/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 09 Heaven or Hell [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/19UgFdVlgwoD5arkLfrzVWfRUI7bs8A5g/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1GpP9BD9TPc6UoDI4Q8TUIk7mFmxMHUT2/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 10 How's Work Going [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/18gaa9dpCfs62HkO48CXeZqlkNBg4hq8X/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/16aC3dM-ZvI4w2uPltqLy-f43fq0KrWdo/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 11 Class 4 Hazardous Materials [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/13g1CSYChiupwOqBkfDl6cKkGghIQRyBs/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1bCPkRnc80Yd2D7CA7sz2GarPRf0SCA4O/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 12 She Made Herself My Sister  [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/1SItld6hB-_jA-H-xA7BQKvm0dadu1Ufd/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1JcobJY8CacgI0QsGsn_SUwWNascpkPkB/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-                <tr>
-                  <td>Dogeza de Tanondemita - 13 Isekai-hen [BD][1080P][TH]</td>
-                  <td>
-                    <center>
-                      <a href="https://drive.google.com/file/d/12czTExOHzH-oriO31vrSSvRfOtakKS_W/view" target="_blank">FLAC คุณภาพสูง</a><br>
-                      <a href="https://drive.google.com/file/d/1KzeeIK7KmzPKhkJEolTci1DMP_SsQlTP/view" target="_blank">AC3 คุณภาพปกติ</a>
-                    </center>
-                  </td>
-                  <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
-                  <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
-                </tr>
-              </tbody>
-          </table>
-            <br>
-            <div class="alert alert-danger" role="alert">
-                ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
-            </div> 
-  <!-- /.container -->
-  </div><br>
-    <!-- Footer -->
-  <footer class="py-3 bg-dark">
-        <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; แปลมั่วๆโดย AryMiku 2020</p>
+      </div>
+      <div class="form-group has-search">
+        <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" class="form-control" placeholder="Search" ng-model="searchText" disabled>
+      </div>
+      <table id="example" class="table table-striped table-bordered marginbtt" style="width:100%">
+        <thead class="sarabun-font">
+            <tr>
+                <th class="priority-1">ชื่อตอน</th>
+                <th>ลิงค์ดาวโหลด</th>
+                <th class="priority-3">ใส่ซับโดย</th>
+                <th class="priority-4">สถานะไฟล์</th>
+            </tr>
+        </thead>
+        <tbody class="sarabun-font">
+          <tr>
+            <td>Dogeza de Tanondemita - 01 Minori Gakesaka [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 02 Indeterminate Equation [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 03 No Panties No Problem!  [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 04 Hardboiled Dogezaland [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 05 Hey There! [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 06 Rei Shioya [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 07 Tama Kyan [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 08 I'm a Baby Now [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 09 Heaven or Hell [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 10 How's Work Going [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 11 Class 4 Hazardous Materials [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 12 She Made Herself My Sister  [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+          <tr>
+            <td>Dogeza de Tanondemita - 13 Isekai-hen [BD][1080P][TH]</td>
+            <td>
+              <center>
+                <a class="btn btn-outline-primary btn-sm" href="https://terabox.com/s/1E6ZcsHKlKKT9HYGaBEKbWg" target="_blank">Dubox (AC-3)</a>
+              </center>
+            </td>
+            <td><center><a href="https://www.facebook.com/AnimefunBB/" target="_blank">AryMiku</a></center></td>
+            <td><center><span class="badge badge-success">ไฟล์สมบูรณ์</span></center></td>
+          </tr>
+        </tbody>
+    </table>
+      <div class="alert alert-danger sarabun-font" role="alert">
+          ** หากดาวโหลดไม่ได้ให้ติดต่อทางเพจทันที
+      </div> 
+    </div>
+            
+            
+  </div>
+
+
+</div>
+<!-- End demo content -->
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">              
+        <div class="modal-body">
+          <img src="" class="imagepreview" style="width: 100%;" >
         </div>
-        <!-- /.container -->
-      </footer>
-  
+      </div>
+    </div>
+  </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/angular.min.js"></script>
+  <!-- End Model Content -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="../main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.js"></script>
   <script src="/js/app.js"></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
-  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('#example').DataTable({
-        "columnDefs": [
-          { "width": "60%", "targets": 0 },
-        ]
-      });
-    });
-  </script>
-
+  <script src="../js/sweetalert2.js"></script>
+  <script src="//morgul.github.io/ui-bootstrap4/ui-bootstrap-tpls-3.0.6.js"></script>
 </body>
-
 </html>
