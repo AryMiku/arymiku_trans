@@ -1780,7 +1780,7 @@ app.controller('myCtrl', function($scope) {
             Name : "Hada Camera",
             Suscess : false,
             DowloadPage : "hadacamera.html",
-            img : "hada.png",
+            img : "hada.jpg",
             Category : "Manga",
             Type : "Series",
             Episode : 70
