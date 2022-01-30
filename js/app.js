@@ -1783,7 +1783,7 @@ app.controller('myCtrl', function($scope) {
             img : "hada.jpg",
             Category : "Manga",
             Type : "Series",
-            Episode : 71
+            Episode : 72
         },
         {
             Name : "High School Of The Dead (Full Color)",
@@ -2040,7 +2040,7 @@ app.controller('secretCtrl',function($scope,$http,$q){
             window.location.href = "index.html"
         }
         var dowloadlink = "https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/" + c + ".json"
-        $http.get(dowloadlink).then(function(res) {
+        axios.get(dowloadlink).then(function(res) {
             $scope.data = res.data;
             $scope.picture_path = $scope.data.Picture;//doesFileExist('/pic/secret/' + c + '.jpg');
             // $scope.dataOnPage = _.find($scope.data, function(data){
@@ -2056,7 +2056,7 @@ app.controller('secretCtrl',function($scope,$http,$q){
                 });
               });
         })
-        .catch(function(){
+        .catch(function(err){
             Swal.fire({
                 title: 'หน้านี้ไม่มีข้อมูลกำลังกลับหน้าหลัก',
                 showConfirmButton: false,
