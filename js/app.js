@@ -2040,7 +2040,7 @@ app.controller('secretCtrl',function($scope,$http,$q){
             window.location.href = "index.html"
         }
         var dowloadlink = "https://raw.githubusercontent.com/AryMiku/API_AryMiku/master/" + c + ".json"
-        axios.get(dowloadlink).then(function(res) {
+        $http.get(dowloadlink).then(function(res) {
             $scope.data = res.data;
             $scope.picture_path = $scope.data.Picture;//doesFileExist('/pic/secret/' + c + '.jpg');
             // $scope.dataOnPage = _.find($scope.data, function(data){
