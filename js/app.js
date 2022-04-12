@@ -1778,12 +1778,12 @@ app.controller('myCtrl', function($scope) {
         },
         {
             Name : "Hada Camera",
-            Suscess : false,
+            Suscess : true,
             DowloadPage : "hadacamera.html",
             img : "hada.jpg",
             Category : "Manga",
             Type : "Series",
-            Episode : 80
+            Episode : 81
         },
         {
             Name : "High School Of The Dead (Full Color)",
